@@ -1,0 +1,148 @@
+{
+    "BiologyEntrance": {
+        "Image": "images/Routing/Biologie/BioRoomClosedDoor.png",
+        "Buttons": {
+            "right": {
+                "Type": "preset",
+                "Image": "right",
+                "Actions": [["Route", "Biologie2"]]
+            }
+        }
+    },
+ 
+    "Biologie2": {
+        "Image": "images/Routing/Biologie/BioRoomOpenedDoor.png",
+        "Buttons": {
+            "left": {
+                "Type": "preset",
+                "Image": "left",
+                "Actions": [["Route", "BiologyEntrance"]]
+            },
+            "right": {
+                "Type": "preset",
+                "Image": "right",
+                "Actions": [["Route", "Biologie3"]]
+            }
+        }
+    },
+ 
+    "Biologie3": {
+        "Image": "images/Routing/Biologie/BioRoom1.png",
+        "Buttons": {
+            "left": {
+                "Type": "preset",
+                "Image": "left",
+                "Actions": [["Route", "Biologie2"]]
+            },
+            "right": {
+                "Type": "preset",
+                "Image": "right",
+                "Actions": [["Route", "Biologie4"]]
+ 
+            }
+        }
+    },
+ 
+    "Biologie4": {
+        "Image": "images/Routing/Biologie/Bio_n.png",
+        "Buttons": {
+            "left": {
+                "Type": "preset",
+                "Image": "left",
+                "Actions": [["Route", "Biologie3"]]
+            },
+            "right": {
+                "Type": "preset",
+                "Image": "right",
+                "Actions": [["Route", "Biologie5"]]
+            }
+        }
+    },
+   
+    "Biologie5": {
+        "Image": "images/Routing/Biologie/Bio_n_e.png",
+        "Buttons": {
+            "left": {
+                "Type": "preset",
+                "Image": "left",
+                "Actions": [["Route", "Biologie4"]]
+            },
+            "right": {
+                "Type": "preset",
+                "Image": "right",
+                "Actions": [["Route", "Biologie6"]]
+            }
+        }
+    },
+    "Biologie6": {
+        "Image": "images/Routing/Biologie/Bio_n_w.png",
+        "Buttons": {
+            "left": {
+                "Type": "preset",
+                "Image": "left",
+                "Actions": [["Route", "Biologie5"]]
+            },
+            "right": {
+                "Type": "preset",
+                "Image": "right",
+                "Actions": [["Route", "Biologie7"]]
+            }
+        }
+    },
+    "Biologie7": {
+        "Image": "images/Routing/Biologie/Bio_s.png",
+        "Buttons": {
+            "left": {
+                "Type": "preset",
+                "Image": "left",
+                "Actions": [["Route", "Biologie6"]]
+            },
+            "right": {
+                "Type": "preset",
+                "Image": "right",
+                "Actions": [["Route", "Biologie8"]]
+            },
+        "Blackboard": {
+            "Type": "polygon",
+            "Points": "1203,0,1205,495,376,500,373,-2",
+            "Actions": [["Route", "BiologyMinigame"]]
+            }
+        }
+    },
+    "Biologie8": {
+        "Image": "images/Routing/Biologie/Bio_s_e.png",
+        "Buttons": {
+            "left": {
+                "Type": "preset",
+                "Image": "left",
+                "Actions": [["Route", "Biologie7"]]
+            },
+            "right": {
+                "Type": "preset",
+                "Image": "right",
+                "Actions": [["Route", "Biologie9"]]
+            }
+        }
+    },
+    "Biologie9": {
+        "Image": "images/Routing/Biologie/Bio_s_w.png",
+        "Buttons": {
+            "left": {
+                "Type": "preset",
+                "Image": "left",
+                "Actions": [["Route", "Biologie8"]]
+            },
+            "right": {
+                "Type": "preset",
+                "Image": "right",
+                "Actions": [["Route", "BiologyEntrance"]]
+            }
+        }
+    },
+ 
+    "BiologyMinigame": {
+        "Type": "Minigame",
+        "FallbackSlide": "BiologyEntrance",
+        "MinigameDefClassName": "Framework.Minigames.MinigameDefClasses.BiologyMinigame"
+    }
+}

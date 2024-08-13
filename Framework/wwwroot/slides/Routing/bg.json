@@ -1,0 +1,134 @@
+
+{
+    "ArtEntrance": {
+        
+        "Image": "images/Routing/BG/BG_1_1.png",
+        "Buttons": {
+            "right": {
+                "Type": "preset",
+                "Image": "right",
+                "Actions": [["Route", "Art2"]]
+            }
+        }
+    },
+
+    "Art2": {
+        "Image": "images/Routing/BG/BG_1_3.png",
+        "Buttons": {
+            "right": {
+                "Type": "preset",
+                "Image": "top",
+                "Actions": [["Route", "Art3"]]
+            },
+            "down": {
+                "Type": "preset",
+                "Image": "left",
+                "Actions": [["Route", "ArtEntrance"]]
+            }
+        }
+    },
+
+    "Art3": {
+        "Image": "images/Routing/BG/BG_2_2.png",
+        "Buttons": {
+            "down": {
+                "Type": "preset",
+                "Image": "bottom",
+                "Actions": [["Route", "Art2"]]
+            },
+            "left": {
+                "Type": "preset",
+                "Image": "left",
+                "Actions": [["Route", "Art4"]]
+            },
+            "top": {
+                "Type": "preset",
+                "Image": "top",
+                "Actions": [["Route", "Art7"]]
+            },
+            "Blackboard": {
+                "Type": "polygon",
+                "Points": "1515,1079,1472,835,1479,300,1551,11,1608,9,1614,1079",
+                "Actions": [["Route", "FindErrorsMinigame"]]
+            }
+        }
+    },
+
+    "Art4": {
+        "Image": "images/Routing/BG/BG_2_3.png",
+        "Buttons": {
+            "left": {
+                "Type": "preset",
+                "Image": "left",
+                "Actions": [["Route", "Art5"]]
+            },
+            "right": {
+                "Type": "preset",
+                "Image": "right",
+                "Actions": [["Route", "Art3"]]
+            }
+        }
+    },
+    
+    "Art5": {
+        "Image": "images/Routing/BG/BG_2_4.png",
+        "Buttons": {
+            "left": {
+                "Type": "preset",
+                "Image": "left",
+                "Actions": [["Route", "Art6"]]
+            },
+            "right": {
+                "Type": "preset",
+                "Image": "right",
+                "Actions": [["Route", "Art4"]]
+            }
+        }
+    },
+    "Art6": {
+        "Image": "images/Routing/BG/BG_2_5.png",
+        "Buttons": {
+            "left": {
+                "Type": "preset",
+                "Image": "top",
+                "Actions": [["Route", "ArtEntrance"]]
+            },
+            "right": {
+                "Type": "preset",
+                "Image": "right",
+                "Actions": [["Route", "Art5"]]
+            }
+        }
+    },
+
+    "Art7": {
+        "Image": "images/Routing/BG/BG_3_1.png",
+        "Buttons": {
+            "right": {
+                "Type": "preset",
+                "Image": "top",
+                "Actions": [["Route", "Art8"]]
+            },
+            "down": {
+                "Type": "preset",
+                "Image": "bottom",
+                "Actions": [["Route", "Art3"]]
+            }
+        }
+    },
+    "Art8": {
+        "Image": "images/Routing/BG/BG_3_2.png",
+        "Buttons": {
+            "right": {
+                "Type": "preset",
+                "Image": "bottom",
+                "Actions": [["Route", "Art7"]]
+            }
+        }
+    },
+"FindErrorsMinigame": {
+        "Type": "Minigame",
+        "FallbackSlide": "HM305DoorClosed",
+        "MinigameDefClassName": "Framework.Minigames.MinigameDefClasses.FindErrorsMinigame"
+    }
+}

@@ -1,0 +1,315 @@
+{
+    "KellerEntrance": {
+        
+        "Image": "images/Routing/Keller/KellerHM_Entrance1_DoorClosed.png",
+        "Buttons": {           
+            "Door1": {
+                "Type": "polygon",
+                "Points": "691,726,682,287,894,290,897,726",
+                "Actions": [["Route", "Kel2"]]
+            
+        },"left": {
+            "Type": "preset",
+            "Image": "left",
+            "Actions": [["Route", "Kel24"]]}
+    }},
+    "Kel2": {
+        "Image": "images/Routing/Keller/KellerHM_Entrance1_DoorOpened.png",
+        "Buttons": {
+            "top": {
+                "Type": "preset",
+                "Image": "top",
+                "Actions": [["Route", "Kel3"]]
+            }
+            
+    }},
+        "Kel3": {
+        "Image": "images/Routing/Keller/KellerHM_Entrance2.png",
+        "Buttons": {
+            "left": {
+                "Type": "preset",
+                "Image": "left",
+                "Actions": [["Route", "Kel4"]]
+            },
+            "down": {
+                "Type": "preset",
+                "Image": "bottom",
+                "Actions": [["Route", "KellerEntrance"]]}
+            }
+        },
+        "Kel4": {
+            "Image": "images/Routing/Keller/KellerHM_Entrance3.png",
+            "Buttons": {
+                "top": {
+                    "Type": "preset",
+                    "Image": "top",
+                    "Actions": [["Route", "Kel5"]]
+                },"down": {
+                    "Type": "preset",
+                    "Image": "bottom",
+                    "Actions": [["Route", "Kel3"]]}
+                
+        }},
+        "Kel5": {
+            "Image": "images/Routing/Keller/KellerHM_Entrance4.png",
+            "Buttons": {
+                "top": {
+                    "Type": "preset",
+                    "Image": "top",
+                    "Actions": [["Route", "Kel6"]]
+                },"down": {
+                    "Type": "preset",
+                    "Image": "bottom",
+                    "Actions": [["Route", "Kel4"]]}
+                
+        }},
+        "Kel6": {
+            "Image": "images/Routing/Keller/KellerHM_Entrance5_DoorClosed.png",
+            "Buttons": {
+                "Door2": {
+                "Type": "polygon",
+                "Points": "671,827,668,293,920,302,917,816",
+                "Actions": [["Route", "Kel7"]]
+                },"down": {
+                    "Type": "preset",
+                    "Image": "bottom",
+                    "Actions": [["Route", "Kel5"]]}
+                
+        }},
+        "Kel7": {
+            "Image": "images/Routing/Keller/KellerHM_Entrance5_DoorOpened.png",
+            "Buttons": {
+                "top": {
+                    "Type": "preset",
+                    "Image": "top",
+                    "Actions": [["Route", "Kel8"]]
+                },
+                "down": {
+                    "Type": "preset",
+                    "Image": "bottom",
+                    "Actions": [["Route", "Kel7"]]}
+                
+        }},
+        "Kel8": {
+            "Image": "images/Routing/Keller/KellerHM_Entrance6.png",
+            "Buttons": {
+                "top": {
+                    "Type": "preset",
+                    "Image": "top",
+                    "Actions": [["Route", "Kel9"]]
+                },"down": {
+                    "Type": "preset",
+                    "Image": "bottom",
+                    "Actions": [["Route", "Kel7"]]}
+                
+        }},
+        "Kel9": {
+            "Image": "images/Routing/Keller/KellerHM_Entrance7.png",
+            "Buttons": {
+                "top": {
+                    "Type": "preset",
+                    "Image": "top",
+                    "Actions": [["Route", "Kel25"]]
+                }       ,"down": {
+                    "Type": "preset",
+                    "Image": "bottom",
+                    "Actions": [["Route", "Kel8"]]}
+        }},
+        "Kel25": {
+            "Image": "images/Routing/Keller/KellerToHR_Exit1.png",
+            "Buttons": {
+                "right": {
+                    "Type": "preset",
+                    "Image": "right",
+                    "Actions": [["Route", "Kel10"]]
+                },
+                "left": {
+                    "Type": "preset",
+                    "Image": "left",
+                    "Actions": [["Route", "Kel26"]]
+                } 
+                
+        }},
+        "Kel26": {
+            "Image": "images/Routing/Keller/KellerToHR_Exit2.png",
+            "Buttons": {
+                "down": {
+                    "Type": "preset",
+                    "Image": "bottom",
+                    "Actions": [["Route", "Kel25"]]
+                }}},  
+        "Kel10": {
+            "Image": "images/Routing/Keller/KellerHR_Entrance.png",
+            "Buttons": {
+                "right": {
+                    "Type": "preset",
+                    "Image": "right",
+                    "Actions": [["Route", "Kel11"]]}  ,  
+                    "left": {
+                        "Type": "preset",
+                        "Image": "left",
+                        "Actions": [["Route", "Kel25"]]
+                    } 
+                             
+        }},
+        "Kel11": {
+            "Image": "images/Routing/Keller/KellerHR_Entrance2.png",
+            "Buttons": {
+                "top": {
+                    "Type": "preset",
+                    "Image": "top",
+                    "Actions": [["Route", "Kel12"]]} ,
+                    "left": {
+                        "Type": "preset",
+                        "Image": "left",
+                        "Actions": [["Route", "Kel10"]]}             
+        }},
+        "Kel12": {
+            "Image": "images/Routing/Keller/KellerHR_Entrance3_DoorClosed.png",
+            "Buttons": {
+                "Door3": {
+                    "Type": "polygon",
+                    "Points": "642,952,633,180,1016,186,1005,952",
+                    "Actions": [["Route", "Kel13"]]
+                    }        
+        }},
+        "Kel13": {
+            "Image": "images/Routing/Keller/KellerHR_Entrance3_DoorOpened.png",
+            "Buttons": {
+                "top": {
+                    "Type": "preset",
+                    "Image": "top",
+                    "Actions": [["Route", "Kel14"]]}
+                    ,"down": {
+                        "Type": "preset",
+                        "Image": "bottom",
+                        "Actions": [["Route", "Kel11"]]} 
+                }},
+                "Kel14": {
+            "Image": "images/Routing/Keller/KellerHR_Entrance4.png",
+            "Buttons": {
+                "top": {
+                    "Type": "preset",
+                    "Image": "top",
+                    "Actions": [["Route", "Kel15"]]}   ,"down": {
+                        "Type": "preset",
+                        "Image": "bottom",
+                        "Actions": [["Route", "Kel13"]]}  
+                }},
+                "Kel15": {
+            "Image": "images/Routing/Keller/KellerHR_Entrance5.png",
+            "Buttons": {
+                "top": {
+                    "Type": "preset",
+                    "Image": "top",
+                    "Actions": [["Route", "Kel16"]]}    ,"down": {
+                        "Type": "preset",
+                        "Image": "bottom",
+                        "Actions": [["Route", "Kel14"]]} 
+                }},
+                "Kel16": {
+            "Image": "images/Routing/Keller/KellerHR_Entrance6.png",
+            "Buttons": {
+                "top": {
+                    "Type": "preset",
+                    "Image": "top",
+                    "Actions": [["Route", "Kel17"]]}   ,"down": {
+                        "Type": "preset",
+                        "Image": "bottom",
+                        "Actions": [["Route", "Kel15"]]}  
+                }},
+                "Kel17": {
+            "Image": "images/Routing/Keller/KellerHR_Entrance7.png",
+            "Buttons": {
+                "left": {
+                    "Type": "preset",
+                    "Image": "left",
+                    "Actions": [["Route", "Kel18"]]} ,
+                    "right": {
+                    "Type": "preset",
+                    "Image": "right",
+                    "Actions": [["Route", "Kel19"]]}   ,"down": {
+                        "Type": "preset",
+                        "Image": "bottom",
+                        "Actions": [["Route", "Kel16"]]}   
+                }},
+                "Kel18": {
+            "Image": "images/Routing/Keller/KellerHR_Entrance7_Left.png",
+            "Buttons": {
+                "right": {
+                    "Type": "preset",
+                    "Image": "right",
+                    "Actions": [["Route", "Kel17"]]}  
+                }},
+                "Kel19":{
+                "Image": "images/Routing/Keller/KellerHR_Entrance7_Right.png",
+            "Buttons": {
+                "left": {
+                    "Type": "preset",
+                    "Image": "left",
+                    "Actions": [["Route", "Kel17"]]},
+                    "top": {
+                    "Type": "preset",
+                    "Image": "top",
+                    "Actions": [["Route", "Kel20"]]}  
+                }},
+                "Kel20":{
+                "Image": "images/Routing/Keller/KellerToHM_Exit1_DoorClosed.png",
+            "Buttons": {
+                
+                    "Door4": {
+                    "Type": "polygon",
+                    "Points": "540,1057,496,3,1158,0,1118,1054",
+                    "Actions": [["Route", "Kel21"]]}
+                      ,"down": {
+                        "Type": "preset",
+                        "Image": "bottom",
+                        "Actions": [["Route", "Kel19"]]} }}
+                ,
+                "Kel21":{
+                "Image": "images/Routing/Keller/KellerToHM_Exit1_DoorOpened.png",
+            "Buttons": {
+                "top": {
+                    "Type": "preset",
+                    "Image": "top",
+                    "Actions": [["Route", "Kel22"]]}    
+                    ,"down": {
+                        "Type": "preset",
+                        "Image": "bottom",
+                        "Actions": [["Route", "Kel20"]]} 
+                }},
+                "Kel22":{
+                    "Image": "images/Routing/Keller/KellerToHM_Exit2.png",
+                "Buttons": {
+                    "top": {
+                        "Type": "preset",
+                        "Image": "top",
+                        "Actions": [["Route", "Kel23"]]} 
+                        ,"down": {
+                            "Type": "preset",
+                            "Image": "bottom",
+                            "Actions": [["Route", "Kel21"]]}  
+                    }},
+                    "Kel23":{
+                        "Image": "images/Routing/Keller/KellerToHM_Exit3_DoorClosed.png",
+                    "Buttons": {              
+                            "Door5": {
+                    "Type": "polygon",
+                    "Points": "555,813,1019,798,993,0,592,6",
+                    "Actions": [["Route", "Kel24"]]}
+                        }},
+                        "Kel24":{
+                        "Image": "images/Routing/Keller/KellerToHM_Exit3_DoorOpened.png",
+                    "Buttons": {
+                        "right": {
+                            "Type": "preset",
+                            "Image": "right",
+                            "Actions": [["Route", "KellerEntrance"]]} ,"down": {
+                            "Type": "preset",
+                            "Image": "bottom",
+                            "Actions": [["Route", "Kel22"]]} 
+                        }}
+}
+
+    
+   
