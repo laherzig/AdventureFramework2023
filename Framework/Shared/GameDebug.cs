@@ -130,4 +130,16 @@ public partial class GameBase
 		GameState.ChangeRedBull(amount);
 		return GameState.RedBullCount;
 	}
+
+	[JSInvokable]
+	public string GetSaveString()
+	{
+		return GameState.GetSaveString();
+	}
+
+	[JSInvokable]
+	public void LoadSaveString(string saveString)
+	{
+		GameState.SetFromSaveString(saveString);
+	}
 }
