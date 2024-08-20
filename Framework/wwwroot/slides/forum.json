@@ -93,7 +93,7 @@
             "left": {
                 "Type": "preset",
                 "Image": "left",
-                "Actions": [["Route", "Forum4"]]
+                "Actions": [["Route", "GangR1.1"]]
             },
             "right": {
                 "Type": "preset",
@@ -103,6 +103,26 @@
         }
     },
 
+    "GangR1.1": {
+        "Image": "images/Routing/GangR/RGang_1.1.jpg",
+        "Buttons": {
+            "top": {
+                "Type": "preset",
+                "Image": "top",
+                "Actions": [["Route", "Forum1"]]
+            },
+            "left": {
+                "Type": "preset",
+                "Image": "left",
+                "Actions": [["Route", "GangR2.1"]]
+            },
+            "right": {
+                "Type": "preset",
+                "Image": "right",
+                "Actions": [["Route", "GangR1"]]
+            }
+        }
+    },
     "GangR2": {
         "Image": "images/Routing/GangR/RGang_2.jpg",
         "Buttons": {
@@ -110,6 +130,11 @@
                 "Type": "preset",
                 "Image": "left",
                 "Actions": [["Route", "Forum4"]]
+            },
+            "right": {
+                "Type": "preset",
+                "Image": "right",
+                "Actions": [["Route", "GangR2.1"]]
             },
             "top": {
                 "Type": "preset",
@@ -119,13 +144,28 @@
         }
     },
 
-    "GangR3": {
-        "Image": "images/Routing/GangR/RGang_3.jpg",
+    "GangR2.1": {
+        "Image": "images/Routing/GangR/RGang_2.1.jpg",
         "Buttons": {
             "left": {
                 "Type": "preset",
                 "Image": "left",
-                "Actions": [["Route", "Forum4"]]
+                "Actions": [["Route", "GangR2"]]
+            },
+            "right": {
+                "Type": "preset",
+                "Image": "right",
+                "Actions": [["Route", "GangR1.1"]]
+            }
+        }
+    },
+    "GangR3": {
+        "Image": "images/Routing/GangR/RGang_3.jpg",
+        "Buttons": {
+            "bottom": {
+                "Type": "preset",
+                "Image": "bottom",
+                "Actions": [["Route", "GangR2"]]
             },
             "top": {
                 "Type": "preset",
