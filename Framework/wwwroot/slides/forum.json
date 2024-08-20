@@ -1,6 +1,5 @@
 {
     "Start": {
-        "Tags": ["START"],
         "Image": "images/Routing/Other/black.png",
         "Buttons": {},
         "OnEnter": [

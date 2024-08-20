@@ -1,11 +1,12 @@
 {
-    "Black_Screen":{
+    "Awakening":{
             "Tags": ["START"],
-            "Image": "images/other/"
+            "Image": "images/Other/black.png",
+            "Buttons":{},
             "OnEnter":[
                 ["Sleep", "1000"],
                 ["PlayVideo", "0,0,1080,1620","videos/Chemiekeller_Aufwachen.mp4"],
-                ["Route", "Che"]
+                ["Route", "ChemieKeller_n_w"]
             ]
     },
     "ChemieKeller_s": {
@@ -61,7 +62,7 @@
                 ],
                 "Visible": false
             }
-        },
+        }
     },
     "ChemieKeller_s_e": {
         "Image": "images/Routing/Keller/ChemieKeller_s_e_DoorOpened.png",
