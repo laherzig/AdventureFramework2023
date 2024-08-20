@@ -83,4 +83,12 @@ window.debug = {
     playVideo: function (points, path) {
         this.action(["PlayVideo", points, path]);
     },
+    getSaveString: function () {
+        this.objRef
+            .invokeMethodAsync("GetSaveString")
+            .then((saveString) => console.log(saveString));
+    },
+    LoadSaveString: function (saveString) {
+        this.objRef.invokeMethodAsync("LoadSaveString", saveString);
+    },
 };
