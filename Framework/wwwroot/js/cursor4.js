@@ -1,9 +1,10 @@
 // the arrow image that will follow the cursor
-let arrow = document.getElementById("arrow-img");
-
+const arrow = document.getElementById("arrow-img");
 // app div containing the entire generated blazor stuff
 // listen for mutations in that div
 const appContainer = document.getElementById("app");
+
+let svg = document.getElementById("svg");
 
 // config for mutation observer
 // observes attribute changes, node deletions/insertions in the entire subtree of the app div
@@ -11,14 +12,19 @@ let config = { attributes: false, childList: true, subtree: true };
 
 // if mutation occurs, call reassign
 let observer = new MutationObserver(() => {
-    reassign();
+    reappend();
 });
 
-function reassign() {
-    // for some reason, it needs to be reassigned every time
-    // if (arrow == null) {
-    arrow = document.getElementById("arrow-img");
-    // }
+function reappend() {
+    if (svg == null) {
+        svg = document.getElementById("svg");
+    } else {
+        // temporarily disconnect observer to avoid infinite loop caused by appending the arrow
+        observer.disconnect();
+        svg.appendChild(arrow);
+        observer.observe(appContainer, config);
+        console.log("reappended");
+    }
 }
 
 // check for performance impact
@@ -27,9 +33,6 @@ window.addEventListener("mousemove", (event) => {
 });
 
 function track(event) {
-    if (arrow == null) {
-        return;
-    }
     // track arrow position to mouse position
     coords = convertToSvgCoords2(event.x, event.y);
     let width = arrow.getAttribute("width");
@@ -37,4 +40,5 @@ function track(event) {
     arrow.setAttribute("y", coords.y - parseInt(width) / 2);
 }
 
+// start looking for mutations
 observer.observe(appContainer, config);
