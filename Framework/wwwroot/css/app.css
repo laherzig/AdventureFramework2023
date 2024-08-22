@@ -92,19 +92,46 @@ image {
     cursor: none;
 }
 
+/* .pos-preset:hover ~ #arrow-img {
+    display: block;
+} */
+
 .arrow-img {
-    position: absolute;
+    /* position: absolute; */
     display: none;
-    width: 2.5%;
+    /* width: 2.5%; */
     pointer-events: none;
-    z-index: 100; /* make sure that it's always on top */
+    /* z-index: 100;  make sure that it's always on top */
+    /** Those are extremely important, it doesn't work at all without those **/
+    /**  the transforms somehow get messed up end the arrows end up somewhere offscreen **/
+    transform-origin: center;
+    transform-box: border-box;
 }
 
-#vidtag{
+#pos-preset-left:hover ~ #arrow-img {
+    display: block;
+    transform: rotate(0deg);
+}
+
+#pos-preset-right:hover ~ #arrow-img {
+    display: block;
+    transform: rotate(180deg);
+}
+
+#pos-preset-top:hover ~ #arrow-img {
+    display: block;
+    transform: rotate(90deg);
+}
+
+#pos-preset-bottom:hover ~ #arrow-img {
+    display: block;
+    transform: rotate(-90deg);
+}
+
+#vidtag {
     user-select: none;
     -moz-user-select: none;
     -webkit-user-select: none;
     -ms-user-select: none;
     z-index: 100; /* make sure that it's always on top */
-
 }
