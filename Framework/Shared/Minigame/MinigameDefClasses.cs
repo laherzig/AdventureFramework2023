@@ -18,7 +18,7 @@ namespace Framework.Minigames;
 
 public class MiniTest : MinigameDefBase
 {
-	public override string BackgroundImage { get; set; } = "images/HM305_blackboard.jpg";
+	public override string BackgroundImage { get; set; } = "images/TestingImages/HM305_blackboard.jpg";
 
 	public void Test(EventArgs e)
 	{
@@ -55,7 +55,7 @@ public class MiniTest : MinigameDefBase
 
 public class CodeTerminal : MinigameDefBase
 {
-	public override string BackgroundImage { get; set; } = "images/calculator.png";
+	public override string BackgroundImage { get; set; } = "images/TestingImages/calculator.png";
 
 	public string Code { get; set; } = "1234";
 
@@ -237,7 +237,7 @@ public class KillTest : MinigameDefBase
 	[Element]
 	public Rectangle Cancel { get; set; }
 
-	public override string BackgroundImage { get; set; } = "images/HM3_hallwayE.jpg";
+	public override string BackgroundImage { get; set; } = "images/TestingImages/HM3_hallwayE.jpg";
 
 	public GameObjectContainer<Rectangle> Rects { get; } = new();
 
@@ -340,7 +340,7 @@ public class LaurinsRain : MinigameDefBase
 	// 	};
 	// }
 
-	public override string BackgroundImage { get; set; } = "images/HM3_hallwayN.jpg"; // Background Image
+	public override string BackgroundImage { get; set; } = "images/TestingImages/HM3_hallwayN.jpg"; // Background Image
 	public GameObjectContainer<Rectangle> Rects { get; } = new(); // Gameobject container that contains rectangles that are to be moved
 
 	[Element]
@@ -401,7 +401,7 @@ public class AudioTest : MinigameDefBase
 	[Element]
 	public Rectangle StopRect { get; set; }
 
-	public override string BackgroundImage { get; set; } = "images/HM305_fromEntrance.jpg"; // Background Image
+	public override string BackgroundImage { get; set; } = "images/TestingImages/HM305_fromEntrance.jpg"; // Background Image
 
 	public async Task PlayAudio(string path)
 	{
@@ -464,7 +464,7 @@ public class AudioTest : MinigameDefBase
 
 public class VideoTest : MinigameDefBase
 {
-	public override string BackgroundImage { get; set; } = "images/HM3_hallwayN.jpg";
+	public override string BackgroundImage { get; set; } = "images/TestingImages/HM3_hallwayN.jpg";
 
 	[Element]
 	public Rectangle PlaceLeft { get; set; }
@@ -555,7 +555,7 @@ public class VideoTest : MinigameDefBase
 
 public class ElementStyleTest : MinigameDefBase
 {
-	public override string BackgroundImage { get; set; } = "images/HM3_hallwayW.jpg";
+	public override string BackgroundImage { get; set; } = "images/TestingImages/HM3_hallwayW.jpg";
 
 	[Element]
 	public Rectangle Rectangle { get; set; } = new()
@@ -655,7 +655,7 @@ public class ElementStyleTest : MinigameDefBase
 public class ElementTest : MinigameDefBase
 {
 
-	public override string BackgroundImage { get; set; } = "images/HM3_hallwayN.jpg";
+	public override string BackgroundImage { get; set; } = "images/TestingImages/HM3_hallwayN.jpg";
 
 	[Element]
 	public RawMarkup Markup { get; set; }
@@ -767,7 +767,7 @@ public class ElementTest : MinigameDefBase
 public class MouseServiceTest : MinigameDefBase
 {
 
-	public override string BackgroundImage { get; set; } = "images/HM3_hallwayN.jpg";
+	public override string BackgroundImage { get; set; } = "images/TestingImages/HM3_hallwayN.jpg";
 	public override async Task GameLoop(CancellationToken ct)
 	{
 		while (true)
@@ -837,7 +837,7 @@ public class MouseServiceTest : MinigameDefBase
 
 public class IOServicesTest : MinigameDefBase
 {
-	public override string BackgroundImage { get; set; } = "images/HM3_hallwayN.jpg";
+	public override string BackgroundImage { get; set; } = "images/TestingImages/HM3_hallwayN.jpg";
 
 	public override void OnKeyDown(object? sender, KeyEventArgs e)
 	{
@@ -862,7 +862,7 @@ public class IOServicesTest : MinigameDefBase
 
 // public class KeyboardStateTest : MinigameDefBase
 // {
-// 	public override string BackgroundImage { get; set; } = "images/HM3_hallwayN.jpg";
+// 	public override string BackgroundImage { get; set; } = "images/TestingImages/HM3_hallwayN.jpg";
 
 // 	// public Rectangle ToggleA { get; set; }
 
@@ -908,7 +908,7 @@ public class IOServicesTest : MinigameDefBase
 
 public class DimitriDialogue : MinigameDefBase
 {
-	public override string BackgroundImage { get; set; } = "images/HM3_hallwayN.jpg"; // Background Image
+	public override string BackgroundImage { get; set; } = "images/TestingImages/HM3_hallwayN.jpg"; // Background Image
 
 
 	//DIALOGUE STUFF

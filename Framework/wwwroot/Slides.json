@@ -1,8 +1,7 @@
 {
     "MusicRoom": {
         "Tags": ["START"],
-        "Image": "images/HM305_fromEntrance.jpg",
-        "Buttons": {
-        }
+        "Image": "images/TestingImages/HM305_fromEntrance.jpg",
+        "Buttons": {}
     }
 }

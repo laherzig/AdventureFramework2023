@@ -5,7 +5,7 @@ namespace Framework.Minigames.MinigameDefClasses;
 
 public class MyMinigame : MinigameDefBase
 {
-	public override string BackgroundImage { get; set; } = "images/HM3_hallwayN.jpg";
+	public override string BackgroundImage { get; set; } = "images/TestingImages/HM3_hallwayN.jpg";
 
 
 
@@ -97,7 +97,7 @@ public class MyMinigame : MinigameDefBase
 
 
 
-// 	public override string BackgroundImage { get; set; } = "images/HM3_hallwayN.jpg";
+// 	public override string BackgroundImage { get; set; } = "images/TestingImages/HM3_hallwayN.jpg";
 
 
 
