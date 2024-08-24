@@ -1,13 +1,13 @@
 {
-    "Awakening":{
-            "Tags": ["START"],
-            "Image": "images/Other/black.png",
-            "Buttons":{},
-            "OnEnter":[
-                ["Sleep", "1000"],
-                ["PlayVideo", "0,0,1080,1620","videos/Chemiekeller_Aufwachen.mp4"],
-                ["Route", "ChemieKeller_s_e"]
-            ]
+    "Awakening": {
+        "Tags": ["START"],
+        "Image": "images/Other/black.png",
+        "Buttons": {},
+        "OnEnter": [
+            ["Sleep", "1000"],
+            ["PlayVideo", "0,0,1080,1620", "videos/Chemiekeller_Aufwachen.mp4"],
+            ["Route", "ChemieKeller_s_e"]
+        ]
     },
     "ChemieKeller_s": {
         "Image": "images/Routing/Keller/ChemieKeller_s_DoorOpened.png",
@@ -97,9 +97,7 @@
                 "Visible": false
             }
         },
-        "OnEnter": [
-                    ["AddItem", "nitro_pipette"]
-        ]
+        "OnEnter": [["AddItem", "nitro_pipette"]]
     },
     "ChemieKeller_s_w": {
         "Image": "images/Routing/Keller/ChemieKeller_s_w_note.png",
@@ -228,8 +226,6 @@
                 "Actions": [["Route", "ChemieKeller_n"]]
             }
         }
-
-
     },
     "ChemieKeller_n": {
         "Image": "images/Routing/Keller/ChemieKeller_n.png",
@@ -415,12 +411,12 @@
             "left": {
                 "Type": "preset",
                 "Image": "left",
-                "Actions": [["Route", "KellerKoridor_7"]]
+                "Actions": [["Route", "KellerKoridor_8"]]
             },
             "right": {
                 "Type": "preset",
                 "Image": "right",
-                "Actions": [["Route", "KellerKoridor_7"]]
+                "Actions": [["Route", "KellerKoridor_9"]]
             },
             "top": {
                 "Type": "preset",
@@ -451,9 +447,9 @@
                 "Type": "polygon",
                 "Points": "1355,1074,1375,140,1619,16,1617,1076",
                 "Actions": [
-                ["PlaySound", "audio/door-open.mov"],
-                ["Route", "ServerRaum1"]]
-
+                    ["PlaySound", "audio/door-open.mov"],
+                    ["Route", "ServerRaum1"]
+                ]
             }
         }
     },
@@ -469,7 +465,7 @@
                 "Type": "preset",
                 "Image": "left",
                 "Actions": [["Route", "KellerKoridor_5"]]
-            },     
+            },
             "bottom": {
                 "Type": "preset",
                 "Image": "bottom",
@@ -489,7 +485,7 @@
                 "Type": "preset",
                 "Image": "left",
                 "Actions": [["Route", "KellerKoridor_4"]]
-            },     
+            },
             "top": {
                 "Type": "preset",
                 "Image": "top",
@@ -509,7 +505,7 @@
                 "Type": "preset",
                 "Image": "left",
                 "Actions": [["Route", "KellerKoridor_3"]]
-            },     
+            },
             "top": {
                 "Type": "preset",
                 "Image": "top",
@@ -534,7 +530,7 @@
                 "Type": "preset",
                 "Image": "left",
                 "Actions": [["Route", "KellerKoridor_9"]]
-            },     
+            },
             "bottom": {
                 "Type": "preset",
                 "Image": "bottom",
@@ -554,7 +550,7 @@
                 "Type": "preset",
                 "Image": "left",
                 "Actions": [["Route", "KellerKoridor_7"]]
-            },     
+            },
             "door": {
                 "Type": "polygon",
                 "Points": "678,973,673,7,973,0,972,167,959,173,957,255,977,260,953,1079,850,1079",
@@ -574,7 +570,7 @@
                 "Type": "preset",
                 "Image": "left",
                 "Actions": [["Route", "KellerKoridor_2"]]
-            },     
+            },
             "bottom": {
                 "Type": "polygon",
                 "Points": "915,967,707,1076,689,5,930,58,923,559,914,943",
@@ -594,8 +590,9 @@
                 "Type": "polygon",
                 "Points": "645,1079,645,61,744,2,973,8,973,1079,956,1079",
                 "Actions": [
-                ["PlaySound", "audio/fight.mp3"],
-                ["Route", "BossFightMinigame"]]
+                    ["PlaySound", "audio/fight.mp3"],
+                    ["Route", "BossFightMinigame"]
+                ]
             }
         }
     },
