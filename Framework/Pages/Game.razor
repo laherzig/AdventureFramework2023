@@ -7,6 +7,12 @@
 @using Framework.InventoryUI
 @using Framework.PauseMenu
 
+@if (Debug) {
+    <div style="position:absolute;top:0;left:0;color:black;background-color:white;z-index:9999">
+        @GameState.CurrentSlide
+    </div>
+}
+
 
 @* <DynamicComponent Type=@typeof(Framework.Slides.Slide) 
 Parameters=@(new Dictionary<string, object>{
