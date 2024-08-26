@@ -88,7 +88,7 @@ window.debug = {
             .invokeMethodAsync("GetSaveString")
             .then((saveString) => console.log(saveString));
     },
-    LoadSaveString: function (saveString) {
+    loadSaveString: function (saveString) {
         this.objRef.invokeMethodAsync("LoadSaveString", saveString);
     },
 };
