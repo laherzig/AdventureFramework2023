@@ -1,6 +1,5 @@
 {
     "Awakening": {
-        "Tags": ["START"],
         "Image": "images/Other/black.png",
         "Buttons": {},
         "OnEnter": [
