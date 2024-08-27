@@ -7,11 +7,6 @@
 @using Framework.InventoryUI
 @using Framework.PauseMenu
 
-@if (Debug) {
-    <div style="position:absolute;top:0;left:0;color:black;background-color:white;z-index:9999">
-        @GameState.CurrentSlide
-    </div>
-}
 
 
 @* <DynamicComponent Type=@typeof(Framework.Slides.Slide) 
@@ -22,6 +17,12 @@ Parameters=@(new Dictionary<string, object>{
     <Minigame MinigameDefClass="@SlideService.GetSlide(SlideId).MinigameDefClassName" OnFinished="FinishMinigame" />
 
 }else {
+    @* Only add info in Slides, cause minigames don't have image and they're recognisable anyways *@
+    @if (Debug) {
+        <div style="position:absolute;top:0;left:0;color:black;background-color:white;z-index:9999">
+            @GameState.CurrentSlide<br />@SlideService.GetSlide(GameState.CurrentSlide).Image.Replace("images/Routing/", "")
+        </div>
+    }
 
     <DynamicComponent Type=@typeof(Slide) Parameters="Parameters.GetParameterDictionary()" />
 }

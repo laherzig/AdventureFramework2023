@@ -1,43 +1,23 @@
 {
     "HauptHalleMitte": {
+        "Tags": ["START"],
         "Image": "images/Routing/Haupthall/FromBioFloorToMainHall_1.png",
         "Buttons": {
             "top": {
                 "Type": "preset",
                 "Image": "top",
-                "Actions": [["Route", "Biologie13"]]
+                "Actions": [["Route", "HauptHalle2"]]
             },
             "left": {
                 "Type": "preset",
                 "Image": "left",
-                "Actions": [["Route", "Biologie31"]]
-            },
-            "down": {
-                "Type": "preset",
-                "Image": "top",
-                "Actions": [["Route", "Biologie13"]]
+                "Actions": [["Route", "HauptHalle2"]]
             }
         }
     },
     "HauptHalle1": {
         "Image": "images/Routing/Haupthall/FromBioFloorToMainHallRight.png",
-        "Buttons": {
-            "top": {
-                "Type": "preset",
-                "Image": "top",
-                "Actions": [["Route", "Biologie13"]]
-            },
-            "left": {
-                "Type": "preset",
-                "Image": "left",
-                "Actions": [["Route", "Biologie31"]]
-            },
-            "down": {
-                "Type": "preset",
-                "Image": "top",
-                "Actions": [["Route", "Biologie13"]]
-            }
-        }
+        "Buttons": {}
     },
     "HauptHalle2": {
         "Image": "images/Routing/Haupthall/FromBioFloorToMainHall_2.png",
@@ -45,17 +25,13 @@
             "top": {
                 "Type": "preset",
                 "Image": "top",
-                "Actions": [["Route", "Biologie13"]]
+                "Actions": [["Route", "HauptHalle3"]]
             },
-            "left": {
-                "Type": "preset",
-                "Image": "left",
-                "Actions": [["Route", "Biologie31"]]
-            },
+
             "down": {
                 "Type": "preset",
-                "Image": "top",
-                "Actions": [["Route", "Biologie13"]]
+                "Image": "bottom",
+                "Actions": [["Route", "HauptHalleMitte"]]
             }
         }
     },
@@ -65,17 +41,17 @@
             "top": {
                 "Type": "preset",
                 "Image": "top",
-                "Actions": [["Route", "Biologie13"]]
+                "Actions": [["Route", "HauptHalle4"]]
             },
             "left": {
                 "Type": "preset",
                 "Image": "left",
-                "Actions": [["Route", "Biologie31"]]
+                "Actions": [["Route", "HauptHalle13"]]
             },
             "down": {
                 "Type": "preset",
-                "Image": "top",
-                "Actions": [["Route", "Biologie13"]]
+                "Image": "bottom",
+                "Actions": [["Route", "HauptHalle2"]]
             }
         }
     },
@@ -85,17 +61,22 @@
             "top": {
                 "Type": "preset",
                 "Image": "top",
-                "Actions": [["Route", "Biologie13"]]
+                "Actions": [["Route", "HauptHalle5"]]
             },
             "left": {
                 "Type": "preset",
                 "Image": "left",
-                "Actions": [["Route", "Biologie31"]]
+                "Actions": [["Route", "HauptHalle15"]]
+            },
+            "right": {
+                "Type": "preset",
+                "Image": "right",
+                "Actions": [["Route", "HauptHalle10"]]
             },
             "down": {
                 "Type": "preset",
-                "Image": "top",
-                "Actions": [["Route", "Biologie13"]]
+                "Image": "bottom",
+                "Actions": [["Route", "HauptHalle3"]]
             }
         }
     },
@@ -105,17 +86,22 @@
             "top": {
                 "Type": "preset",
                 "Image": "top",
-                "Actions": [["Route", "Biologie13"]]
+                "Actions": [["Route", "HauptHalle6"]]
             },
             "left": {
                 "Type": "preset",
                 "Image": "left",
-                "Actions": [["Route", "Biologie31"]]
+                "Actions": [["Route", "HauptHalle14"]]
+            },
+            "right": {
+                "Type": "preset",
+                "Image": "right",
+                "Actions": [["Route", "HauptHalle8"]]
             },
             "down": {
                 "Type": "preset",
-                "Image": "top",
-                "Actions": [["Route", "Biologie13"]]
+                "Image": "bottom",
+                "Actions": [["Route", "HauptHalle4"]]
             }
         }
     },
@@ -125,37 +111,23 @@
             "top": {
                 "Type": "preset",
                 "Image": "top",
-                "Actions": [["Route", "Biologie13"]]
+                "Actions": [["Route", "HauptHalle7"]]
             },
-            "left": {
-                "Type": "preset",
-                "Image": "left",
-                "Actions": [["Route", "Biologie31"]]
-            },
+
             "down": {
                 "Type": "preset",
-                "Image": "top",
-                "Actions": [["Route", "Biologie13"]]
+                "Image": "bottom",
+                "Actions": [["Route", "HauptHalle5"]]
             }
         }
     },
     "HauptHalle7": {
         "Image": "images/Routing/Haupthall/FromBioFloorToMainHall_7.png",
         "Buttons": {
-            "top": {
-                "Type": "preset",
-                "Image": "top",
-                "Actions": [["Route", "Biologie13"]]
-            },
-            "left": {
-                "Type": "preset",
-                "Image": "left",
-                "Actions": [["Route", "Biologie31"]]
-            },
             "down": {
                 "Type": "preset",
-                "Image": "top",
-                "Actions": [["Route", "Biologie13"]]
+                "Image": "bottom",
+                "Actions": [["Route", "HauptHalle6"]]
             }
         }
     },
@@ -165,57 +137,52 @@
             "top": {
                 "Type": "preset",
                 "Image": "top",
-                "Actions": [["Route", "Biologie13"]]
+                "Actions": [["Route", "HauptHalle9"]]
             },
             "left": {
                 "Type": "preset",
                 "Image": "left",
-                "Actions": [["Route", "Biologie31"]]
+                "Actions": [["Route", "HauptHalle5"]]
             },
-            "down": {
+            "right": {
                 "Type": "preset",
-                "Image": "top",
-                "Actions": [["Route", "Biologie13"]]
+                "Image": "right",
+                "Actions": [["Route", "HauptHalle14"]]
             }
         }
     },
     "HauptHalle9": {
         "Image": "images/Routing/Haupthall/FromMainHallToBioFloor_2.png",
         "Buttons": {
-            "top": {
-                "Type": "preset",
-                "Image": "top",
-                "Actions": [["Route", "Biologie13"]]
-            },
             "left": {
                 "Type": "preset",
                 "Image": "left",
-                "Actions": [["Route", "Biologie31"]]
+                "Actions": [["Route", "HauptHalle10"]]
+            },
+            "right": {
+                "Type": "preset",
+                "Image": "right",
+                "Actions": [["Route", "HauptHalle15"]]
             },
             "down": {
                 "Type": "preset",
-                "Image": "top",
-                "Actions": [["Route", "Biologie13"]]
+                "Image": "bottom",
+                "Actions": [["Route", "HauptHalle8"]]
             }
         }
     },
     "HauptHalle10": {
         "Image": "images/Routing/Haupthall/FromMainHallToStairsHR.png",
         "Buttons": {
-            "top": {
-                "Type": "preset",
-                "Image": "top",
-                "Actions": [["Route", "Biologie13"]]
-            },
             "left": {
                 "Type": "preset",
                 "Image": "left",
-                "Actions": [["Route", "Biologie31"]]
+                "Actions": [["Route", "HauptHalle4"]]
             },
-            "down": {
+            "right": {
                 "Type": "preset",
-                "Image": "top",
-                "Actions": [["Route", "Biologie13"]]
+                "Image": "right",
+                "Actions": [["Route", "HauptHalle9"]]
             }
         }
     },
@@ -225,17 +192,7 @@
             "top": {
                 "Type": "preset",
                 "Image": "top",
-                "Actions": [["Route", "Biologie13"]]
-            },
-            "left": {
-                "Type": "preset",
-                "Image": "left",
-                "Actions": [["Route", "Biologie31"]]
-            },
-            "down": {
-                "Type": "preset",
-                "Image": "top",
-                "Actions": [["Route", "Biologie13"]]
+                "Actions": [["Route", "HauptHalle12"]]
             }
         }
     },
@@ -245,17 +202,13 @@
             "top": {
                 "Type": "preset",
                 "Image": "top",
-                "Actions": [["Route", "Biologie13"]]
+                "Actions": [["Route", "HauptHalle13"]]
             },
-            "left": {
-                "Type": "preset",
-                "Image": "left",
-                "Actions": [["Route", "Biologie31"]]
-            },
+
             "down": {
                 "Type": "preset",
-                "Image": "top",
-                "Actions": [["Route", "Biologie13"]]
+                "Image": "bottom",
+                "Actions": [["Route", "HauptHalle11"]]
             }
         }
     },
@@ -265,77 +218,72 @@
             "top": {
                 "Type": "preset",
                 "Image": "top",
-                "Actions": [["Route", "Biologie13"]]
+                "Actions": [["Route", "HauptHalle15"]]
             },
             "left": {
                 "Type": "preset",
                 "Image": "left",
-                "Actions": [["Route", "Biologie31"]]
+                "Actions": [["Route", "HauptHalle17"]]
+            },
+            "right": {
+                "Type": "preset",
+                "Image": "right",
+                "Actions": [["Route", "HauptHalle3"]]
             },
             "down": {
                 "Type": "preset",
-                "Image": "top",
-                "Actions": [["Route", "Biologie13"]]
+                "Image": "bottom",
+                "Actions": [["Route", "HauptHalle12"]]
             }
         }
     },
     "HauptHalle14": {
         "Image": "images/Routing/Haupthall/MainHallEntrance.png",
         "Buttons": {
-            "top": {
-                "Type": "preset",
-                "Image": "top",
-                "Actions": [["Route", "Biologie13"]]
-            },
             "left": {
                 "Type": "preset",
                 "Image": "left",
-                "Actions": [["Route", "Biologie31"]]
+                "Actions": [["Route", "HauptHalle8"]]
             },
-            "down": {
+            "right": {
                 "Type": "preset",
-                "Image": "top",
-                "Actions": [["Route", "Biologie13"]]
+                "Image": "right",
+                "Actions": [["Route", "HauptHalle5"]]
             }
         }
     },
     "HauptHalle15": {
         "Image": "images/Routing/Haupthall/MainHallKantiShopPart.png",
         "Buttons": {
-            "top": {
-                "Type": "preset",
-                "Image": "top",
-                "Actions": [["Route", "Biologie13"]]
-            },
             "left": {
                 "Type": "preset",
                 "Image": "left",
-                "Actions": [["Route", "Biologie31"]]
+                "Actions": [["Route", "HauptHalle9"]]
+            },
+            "right": {
+                "Type": "preset",
+                "Image": "right",
+                "Actions": [["Route", "HauptHalle4"]]
             },
             "down": {
                 "Type": "preset",
-                "Image": "top",
-                "Actions": [["Route", "Biologie13"]]
+                "Image": "bottom",
+                "Actions": [["Route", "HauptHalle13"]]
             }
         }
     },
     "HauptHalle16": {
         "Image": "images/Routing/Haupthall/ToMPC.png",
         "Buttons": {
-            "top": {
-                "Type": "preset",
-                "Image": "top",
-                "Actions": [["Route", "Biologie13"]]
+            "armdruggeMinigame": {
+                "Type": "polygon",
+                "Points": "780,475,692,626,723,835,1032,859,1069,609",
+                "Actions": [["Route", "ArmdruggeMinigame"]]
             },
-            "left": {
+            "back": {
                 "Type": "preset",
-                "Image": "left",
-                "Actions": [["Route", "Biologie31"]]
-            },
-            "down": {
-                "Type": "preset",
-                "Image": "top",
-                "Actions": [["Route", "Biologie13"]]
+                "Image": "bottom",
+                "Actions": [["Route", "HauptHalle17"]]
             }
         }
     },
@@ -345,38 +293,21 @@
             "top": {
                 "Type": "preset",
                 "Image": "top",
-                "Actions": [["Route", "Biologie13"]]
+                "Actions": [["Route", "HauptHalle16"]]
             },
-            "left": {
+            "right": {
                 "Type": "preset",
-                "Image": "left",
-                "Actions": [["Route", "Biologie31"]]
-            },
-            "down": {
-                "Type": "preset",
-                "Image": "top",
-                "Actions": [["Route", "Biologie13"]]
+                "Image": "right",
+                "Actions": [["Route", "HauptHalle13"]]
             }
         }
     },
     "HauptHalle18": {
         "Image": "images/Routing/Haupthall/ToMPC_left.png",
-        "Buttons": {
-            "top": {
-                "Type": "preset",
-                "Image": "top",
-                "Actions": [["Route", "Biologie13"]]
-            },
-            "left": {
-                "Type": "preset",
-                "Image": "left",
-                "Actions": [["Route", "Biologie31"]]
-            },
-            "down": {
-                "Type": "preset",
-                "Image": "top",
-                "Actions": [["Route", "Biologie13"]]
-            }
-        }
+        "Buttons": {}
+    },
+    "ArmdruggeMinigame": {
+        "Type": "Minigame",
+        "MinigameDefClassName": "Framework.Minigames.MinigameDefClasses.ArmDrugge"
     }
 }
