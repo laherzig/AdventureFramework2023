@@ -9,7 +9,7 @@
             }
         }
     },
- 
+
     "Biologie2": {
         "Image": "images/Routing/Biologie/BioRoomOpenedDoor.png",
         "Buttons": {
@@ -25,7 +25,7 @@
             }
         }
     },
- 
+
     "Biologie3": {
         "Image": "images/Routing/Biologie/BioRoom1.png",
         "Buttons": {
@@ -38,11 +38,10 @@
                 "Type": "preset",
                 "Image": "right",
                 "Actions": [["Route", "Biologie4"]]
- 
             }
         }
     },
- 
+
     "Biologie4": {
         "Image": "images/Routing/Biologie/Bio_n.png",
         "Buttons": {
@@ -58,7 +57,7 @@
             }
         }
     },
-   
+
     "Biologie5": {
         "Image": "images/Routing/Biologie/Bio_n_e.png",
         "Buttons": {
@@ -102,10 +101,10 @@
                 "Image": "right",
                 "Actions": [["Route", "Biologie8"]]
             },
-        "Blackboard": {
-            "Type": "polygon",
-            "Points": "1203,0,1205,495,376,500,373,-2",
-            "Actions": [["Route", "BiologyMinigame"]]
+            "Blackboard": {
+                "Type": "polygon",
+                "Points": "1203,0,1205,495,376,500,373,-2",
+                "Actions": [["Route", "BiologyMinigame"]]
             }
         }
     },
@@ -139,7 +138,7 @@
             }
         }
     },
- 
+
     "BiologyMinigame": {
         "Type": "Minigame",
         "FallbackSlide": "BiologyEntrance",

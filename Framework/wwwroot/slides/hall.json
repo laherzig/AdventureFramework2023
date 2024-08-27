@@ -1,7 +1,6 @@
 {
     "HauptHalleMitte": {
-        
-        "Image": "images/Routing/Haupthall/FromBioToMainHall_1.png",
+        "Image": "images/Routing/Haupthall/FromBioFloorToMainHall_1.png",
         "Buttons": {
             "top": {
                 "Type": "preset",
@@ -381,4 +380,3 @@
         }
     }
 }
-

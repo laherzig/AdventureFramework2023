@@ -9,7 +9,7 @@
             }
         }
     },
- 
+
     "Biologie13": {
         "Image": "images/Routing/Biologie/BioBothCorridorsToClassroom_1.png",
         "Buttons": {
@@ -25,7 +25,7 @@
             }
         }
     },
- 
+
     "Biologie14": {
         "Image": "images/Routing/Biologie/BioFloorEntrance.png",
         "Buttons": {
@@ -38,11 +38,10 @@
                 "Type": "preset",
                 "Image": "right",
                 "Actions": [["Route", "Biologie15"]]
- 
             }
         }
     },
- 
+
     "Biologie15": {
         "Image": "images/Routing/Biologie/BioFloorExit.png",
         "Buttons": {
@@ -58,7 +57,7 @@
             }
         }
     },
-   
+
     "Biologie16": {
         "Image": "images/Routing/Biologie/BioFloorMinigame_1.png",
         "Buttons": {
@@ -134,7 +133,7 @@
             }
         }
     },
- 
+
     "Biologie21": {
         "Image": "images/Routing/Biologie/BioFloorMinigame_6.png",
         "Buttons": {
@@ -180,8 +179,8 @@
             }
         }
     },
-    
-     "Biologie24": {
+
+    "Biologie24": {
         "Image": "images/Routing/Biologie/BioLeftCorridorFromClassroom_1.png",
         "Buttons": {
             "left": {
