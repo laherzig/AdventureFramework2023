@@ -19,7 +19,7 @@ public class Material : Image
 public class PhMinigame : MinigameDefBase
 {
     public override string BackgroundImage { get; set; } = "minigame_assets/PhMinigame_assets/edited/Platform.png";
-    
+
     public Material? SelectedMaterial { get; set; }
     static int ColumnCount = 6;
     static int RowCount = 8;
@@ -66,7 +66,7 @@ public class PhMinigame : MinigameDefBase
             {
                 Rectangle WhiteBoard = new Rectangle()
                 {
-                    X = (x * WhiteBoardRectangleWidth) + 310, 
+                    X = (x * WhiteBoardRectangleWidth) + 310,
                     Y = (y * WhiteBoardRectangleHeight) + 95,
                     Width = WhiteBoardRectangleWidth,
                     Height = WhiteBoardRectangleHeight,
@@ -106,7 +106,7 @@ public class PhMinigame : MinigameDefBase
                 CorrectY = 1,
                 PlaceHolderX = 1240,
                 PlaceHolderY = 705,
-                
+
 
             },
             new Material()
@@ -162,9 +162,9 @@ public class PhMinigame : MinigameDefBase
                 PlaceHolderWidth = 12,
                 CorrectX = 4,
                 CorrectY = 2,
-                PlaceHolderX = 1213, 
-                PlaceHolderY = 835, 
-                
+                PlaceHolderX = 1213,
+                PlaceHolderY = 835,
+
 
             },
             new Material()
@@ -264,7 +264,7 @@ public class PhMinigame : MinigameDefBase
                 CorrectY = 1,
                 PlaceHolderX = 1200,
                 PlaceHolderY = 30,
-                
+
             },
             new Material()
             {
@@ -279,7 +279,7 @@ public class PhMinigame : MinigameDefBase
                 CorrectY = 6,
                 PlaceHolderX = 1200,
                 PlaceHolderY = 245,
-                
+
             },
             new Material()
             {
@@ -294,7 +294,7 @@ public class PhMinigame : MinigameDefBase
                 CorrectY = 6,
                 PlaceHolderX = 1200,
                 PlaceHolderY = 460,
-                
+
             },
             new Material()
             {
@@ -309,7 +309,7 @@ public class PhMinigame : MinigameDefBase
                 CorrectY = 4,
                 PlaceHolderX = 1200,
                 PlaceHolderY = 940,
-                
+
             },
             new Material()
             {
@@ -324,7 +324,7 @@ public class PhMinigame : MinigameDefBase
                 CorrectY = 1,
                 PlaceHolderX = 1000,
                 PlaceHolderY = 80,
-                
+
             },
         };
 
@@ -336,7 +336,7 @@ public class PhMinigame : MinigameDefBase
 
     void AddMaterialToGame(Material material)
     {
-        
+
         material.Visible = false;
 
         material.OnClick = (args) => OnMaterialClick(material);
@@ -349,7 +349,7 @@ public class PhMinigame : MinigameDefBase
             Height = material.PlaceHolderHeight,
             Fill = "rgba(0, 255, 0, 0.4)",
             OnClick = (args) => OnMaterialClick(material),
-            
+
         };
 
         material.HintImage = new Image()
@@ -361,13 +361,13 @@ public class PhMinigame : MinigameDefBase
             Visible = false
         };
 
-        
+
 
         AddElement(material.PlaceHolder);
         AddElement(material.HintImage);
         AddElement(material);
 
-        
+
 
     }
     void OnHintClick(Material material)
@@ -381,7 +381,7 @@ public class PhMinigame : MinigameDefBase
     }
 
     void OnMaterialClick(Material material)
-    {  
+    {
         SelectedMaterial = material;
         SelectedMaterial.HintImage.Visible = true;
         SelectedMaterial.PlaceHolder.Visible = false;
@@ -392,9 +392,9 @@ public class PhMinigame : MinigameDefBase
         {
             HideHint(SelectedMaterial);
         }
-        
-    } 
-  
+
+    }
+
     void HideHint(Material material)
     {
         material.HintImage.Visible = false;
@@ -422,7 +422,7 @@ public class PhMinigame : MinigameDefBase
         image.Visible = true;
         Update();
     }
-   
+
     public void CheckIsFinished()
     {
         bool isFinished = true;
