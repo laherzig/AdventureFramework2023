@@ -339,6 +339,11 @@
                 "Type": "preset",
                 "Image": "top",
                 "Actions": [["Route", "GangR5"]]
+            },
+            "left": {
+                "Type": "preset",
+                "Image": "left",
+                "Actions": [["Route", "Forum4"]]
             }
         }
     },
