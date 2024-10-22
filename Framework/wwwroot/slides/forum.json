@@ -10,6 +10,7 @@
     },
 
     "Forum1": {
+        "Tags": ["START"],
         "Image": "images/Routing/Forum/Forum_1.jpg",
         "Buttons": {
             "top": {
