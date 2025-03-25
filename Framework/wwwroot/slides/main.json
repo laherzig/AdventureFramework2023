@@ -3,20 +3,9 @@
     "Hall1": {
         "Image": "images/Routing/Haupthall/HR.png",
         "Buttons": {
-            "top": {
-                "Type": "preset",
-                "Image": "top",
-                "Actions": [["Route", "Hall2"]]
-            }
-        }
-    },
-
-    "Hall2": {
-        "Image": "images/Routing/Haupthall/HR2.png",
-        "Buttons": {
-            "right": {
-                "Type": "preset",
-                "Image": "right",
+            "polygon": {
+                "Type": "polygon",
+                "Points": "877,172,1119,176,1144,191,1255,194,1380,635,1019,624,866,508",
                 "Actions": [["Route", "Hall3"]]
             }
         }
