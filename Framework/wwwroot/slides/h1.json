@@ -1,0 +1,105 @@
+
+{
+    "H1-1": {
+        "Image": "images/Routing/H1/0-0.jpg",
+        "Buttons": {
+            "left": {
+                "Type": "preset",
+                "Image": "left",
+                "Actions": [["Route", "H1-2"]]
+            }
+        }
+    },
+
+    "H1-2": {
+        "Image": "images/Routing/H1/0-1.jpg",
+        "Buttons": {
+            "top": {
+                "Type": "preset",
+                "Image": "top",
+                "Actions": [["Route", "H1-3"]]
+            }
+        }
+    },
+    "H1-3": {
+        "Image": "images/Routing/H1/0-2.jpg",
+        "Buttons": {
+            "top": {
+                "Type": "preset",
+                "Image": "top",
+                "Actions": [["Route", "H1-4"]]
+            }
+        }
+    },
+    "H1-4": {
+        "Image": "images/Routing/H1/0-3.jpg",
+        "Buttons": {
+            "top": {
+                "Type": "preset",
+                "Image": "top",
+                "Actions": [["Route", "H1-5"]]
+            }
+        }
+    },
+    "H1-5": {
+        "Image": "images/Routing/H1/0-4.jpg",
+        "Buttons": {
+            "top": {
+                "Type": "preset",
+                "Image": "top",
+                "Actions": [["Route", "H1-6"]]
+            }
+        }
+    },
+    "H1-6": {
+        "Image": "images/Routing/H1/0-5.jpg",
+        "Buttons": {
+            "left": {
+                "Type": "preset",
+                "Image": "left",
+                "Actions": [["Route", "H1-7"]]
+            }
+        }
+    },
+
+    "H1-7": {
+        "Image": "images/Routing/H1/0-6.jpg",
+        "Buttons": {
+            "top": {
+                "Type": "preset",
+                "Image": "top",
+                "Actions": [["Route", "H1-8"]]
+            }
+        }
+    },
+    "H1-8": {
+        "Image": "images/Routing/H1/0-7.jpg",
+        "Buttons": {
+            "polygon": {
+                "Type": "polygon",
+                "Points": "747,359,943,365,949,794,758,821",
+                "Actions": [["Route", "H1-9"]]
+            }
+        }
+    },
+    "H1-9": {
+        "Image": "images/Routing/H1/0-8.jpg",
+        "Buttons": {
+            "polygon": {
+                "Type": "polygon",
+                "Points": "602,143,1060,140,1062,1074,604,1076",
+                "Actions": [["Route", "Hit"]]
+            }
+        }
+    },
+    "Hit": {
+        "Image": "images/Other/black.png",
+        "Buttons": {},
+        "OnEnter": [
+            ["Sleep", "1000"],
+            ["PlayVideo", "0,0,1080,1620", "videos/knocked-out.mp4"],
+            ["Route", "Awakening"]
+        ]
+    }
+}
+

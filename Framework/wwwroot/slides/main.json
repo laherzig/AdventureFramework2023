@@ -1,0 +1,34 @@
+
+{
+    "Hall1": {
+        "Image": "images/Routing/Haupthall/HR.png",
+        "Buttons": {
+            "top": {
+                "Type": "preset",
+                "Image": "top",
+                "Actions": [["Route", "Hall2"]]
+            }
+        }
+    },
+
+    "Hall2": {
+        "Image": "images/Routing/Haupthall/HR2.png",
+        "Buttons": {
+            "right": {
+                "Type": "preset",
+                "Image": "right",
+                "Actions": [["Route", "Hall3"]]
+            }
+        }
+    },
+    "Hall3": {
+        "Image": "images/Routing/Haupthall/HR4.png",
+        "Buttons": {
+            "top": {
+                "Type": "preset",
+                "Image": "top",
+                "Actions": [["Route", "H1-1"]]
+            }
+        }
+    }
+}

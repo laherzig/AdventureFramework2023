@@ -9,7 +9,6 @@
         ]
     },
     "ChemieKeller_s": {
-        "Tags": ["START"],
         "Image": "images/Routing/ChemieKeller/ChemieKeller_s_DoorOpened.png",
         "Buttons": {
             "ClosedDoor": {

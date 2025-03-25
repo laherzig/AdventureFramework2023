@@ -400,10 +400,10 @@
                 "Image": "left",
                 "Actions": [["Route", "Forum4"]]
             },
-            "top": {
+            "right": {
                 "Type": "preset",
-                "Image": "top",
-                "Actions": [["Route", "PhyEntrance"]]
+                "Image": "right",
+                "Actions": [["Route", "Hall1"]]
             }
         }
     }
