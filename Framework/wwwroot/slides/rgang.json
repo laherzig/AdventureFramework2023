@@ -105,6 +105,7 @@
         "Image": "images/Routing/GangR/RGang_2.1.jpg",
         "Buttons": {
             "left": {
+
                 "Type": "preset",
                 "Image": "left",
                 "Actions": [["Route", "GangR2"]]
@@ -207,7 +208,7 @@
             "bottom": {
                 "Type": "preset",
                 "Image": "bottom",
-                "Actions": [["Route", "GangR4.1"]]
+                "Actions": [["Route", "GangR4"]]
             },
             "left": {
                 "Type": "preset",
@@ -232,7 +233,7 @@
             "bottom": {
                 "Type": "preset",
                 "Image": "bottom",
-                "Actions": [["Route", "GangR4.1"]]
+                "Actions": [["Route", "GangR4"]]
             },
             "left": {
                 "Type": "preset",
@@ -319,11 +320,6 @@
                 "Image": "top",
                 "Actions": [["Route", "GangR2.4"]]
             },
-            "bottom": {
-                "Type": "preset",
-                "Image": "bottom",
-                "Actions": [["Route", "GangR4.2"]]
-            },
             "right": {
                 "Type": "preset",
                 "Image": "right",
@@ -337,12 +333,7 @@
             "left": {
                 "Type": "preset",
                 "Image": "left",
-                "Actions": [["Route", "GangR4.2"]]
-            },
-            "right": {
-                "Type": "preset",
-                "Image": "right",
-                "Actions": [["Route", "GangR4.1"]]
+                "Actions": [["Route", "Forum4"]]
             },
             "top": {
                 "Type": "preset",
@@ -356,118 +347,28 @@
             }
         }
     },
-    "GangR4.1": {
-        "Image": "images/Routing/GangR/RGang_4.1.jpg",
-        "Buttons": {
-            "left": {
-                "Type": "preset",
-                "Image": "left",
-                "Actions": [["Route", "GangR4"]]
-            },
-            "right": {
-                "Type": "preset",
-                "Image": "right",
-                "Actions": [["Route", "GangR4.3"]]
-            },
-            "top": {
-                "Type": "preset",
-                "Image": "top",
-                "Actions": [["Route", "GangR2.2.5"]]
-            }
-        }
-    },
-    "GangR4.2": {
-        "Image": "images/Routing/GangR/RGang_4.2.jpg",
-        "Buttons": {
-            "left": {
-                "Type": "preset",
-                "Image": "left",
-                "Actions": [["Route", "GangR4.3"]]
-            },
-            "right": {
-                "Type": "preset",
-                "Image": "right",
-                "Actions": [["Route", "GangR4"]]
-            },
-            "top": {
-                "Type": "preset",
-                "Image": "top",
-                "Actions": [["Route", "GangR3.3"]]
-            }
-        }
-    },
-    "GangR4.3": {
-        "Image": "images/Routing/GangR/RGang_4.3.jpg",
-        "Buttons": {
-            "left": {
-                "Type": "preset",
-                "Image": "left",
-                "Actions": [["Route", "GangR4.1"]]
-            },
-            "bottom": {
-                "Type": "preset",
-                "Image": "bottom",
-                "Actions": [["Route", "GangR5.1"]]
-            },
-            "right": {
-                "Type": "preset",
-                "Image": "right",
-                "Actions": [["Route", "GangR4.2"]]
-            }
-        }
-    },
     "GangR5": {
         "Image": "images/Routing/GangR/RGang_5.jpg",
         "Buttons": {
-            "right": {
+            "left": {
                 "Type": "preset",
-                "Image": "right",
-                "Actions": [["Route", "GangR5.1"]]
+                "Image": "left",
+                "Actions": [["Route", "Forum4"]]
             },
             "top": {
                 "Type": "preset",
                 "Image": "top",
                 "Actions": [["Route", "GangR6"]]
-            }
-        }
-    },
-    "GangR5.1": {
-        "Image": "images/Routing/GangR/RGang_5.1.jpg",
-        "Buttons": {
-            "left": {
-                "Type": "preset",
-                "Image": "left",
-                "Actions": [["Route", "GangR5"]]
-            },
-            "top": {
-                "Type": "preset",
-                "Image": "top",
-                "Actions": [["Route", "GangR4.3"]]
-            }
-        }
-    },
-    "GangR5.2": {
-        "Image": "images/Routing/GangR/RGang_5.2.jpg",
-        "Buttons": {
-            "left": {
-                "Type": "preset",
-                "Image": "left",
-                "Actions": [["Route", "GangR6"]]
-            },
-            "top": {
-                "Type": "preset",
-                "Image": "top",
-                "Actions": [["Route", "GangR5.1"]]
             }
         }
     },
     "GangR6": {
         "Image": "images/Routing/GangR/RGang_6.jpg",
         "Buttons": {
-            "right": {
+            "left": {
                 "Type": "preset",
-                "Image": "right",
-                "Actions": [["Route", "GangR5.2"]]
+                "Image": "left",
+                "Actions": [["Route", "Forum4"]]
             },
             "top": {
                 "Type": "preset",
@@ -482,37 +383,12 @@
             "left": {
                 "Type": "preset",
                 "Image": "left",
-                "Actions": [["Route", "GangR7.1"]]
-            },
-            "bottom": {
-                "Type": "preset",
-                "Image": "bottom",
-                "Actions": [["Route", "GangR6"]]
+                "Actions": [["Route", "Forum4"]]
             },
             "right": {
                 "Type": "preset",
                 "Image": "right",
                 "Actions": [["Route", "GangR8"]]
-            }
-        }
-    },
-    "GangR7.1": {
-        "Image": "images/Routing/GangR/RGang_7.1.jpg",
-        "Buttons": {
-            "right": {
-                "Type": "preset",
-                "Image": "right",
-                "Actions": [["Route", "GangR7"]]
-            },
-            "left": {
-                "Type": "preset",
-                "Image": "left",
-                "Actions": [["Route", "GangR8"]]
-            },
-            "top": {
-                "Type": "preset",
-                "Image": "top",
-                "Actions": [["Route", "GangR5.2"]]
             }
         }
     },
@@ -522,7 +398,7 @@
             "left": {
                 "Type": "preset",
                 "Image": "left",
-                "Actions": [["Route", "GangR7"]]
+                "Actions": [["Route", "Forum4"]]
             },
             "top": {
                 "Type": "preset",
