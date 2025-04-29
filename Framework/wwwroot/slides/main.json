@@ -7,6 +7,32 @@
                 "Type": "polygon",
                 "Points": "877,172,1119,176,1144,191,1255,194,1380,635,1019,624,866,508",
                 "Actions": [["Route", "Hall3"]]
+            },
+            "polygon2": {
+                "Type": "polygon",
+                "Points": "347,181,751,178,761,504,329,645,252,179",
+                "Actions": [["Route", "Hall2"]]
+            }
+        }
+    },
+    
+    "Hall2": {
+        "Image": "images/Routing/Haupthall/ToMPC.png",
+        "Buttons": {
+            "polygon": {
+                "Type": "polygon",
+                "Points": "730,488,854,485,896,680,853,796,813,796,760,737,740,690,731,643,740,568,758,537,760,507,757,491",
+                "Actions": [["Route", "Armdrugge"]]
+            },
+            "bottom": {
+                "Type": "preset",
+                "Image": "bottom",
+                "Actions": [["Route", "Hall1"]]
+            },
+            "left": {
+                "Type": "preset",
+                "Image": "left",
+                "Actions": [["Route", "Biologie14"]]
             }
         }
     },
@@ -19,5 +45,10 @@
                 "Actions": [["Route", "H1-1"]]
             }
         }
+    },
+    "Armdrugge": {
+        "Type": "Minigame",
+        "FallbackSlide": "Hall2",
+        "MinigameDefClassName": "Framework.Minigames.MinigameDefClasses.ArmDrugge"
     }
 }

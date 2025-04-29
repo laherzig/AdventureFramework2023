@@ -3,7 +3,7 @@ namespace Framework.Minigames.MinigameDefClasses;
 public class ArmDrugge : MinigameDefBase
 {
 	// <edit by laurin>
-	public override string DefaultRoute { get; set; } = "HauptHalle16";
+	public override string DefaultRoute { get; set; } = "Hall2";
 	// </edit by laurin>
 
 	public override string BackgroundImage { get; set; } = "minigame_assets/Armdrücken_assets/Arm_0_F.png";

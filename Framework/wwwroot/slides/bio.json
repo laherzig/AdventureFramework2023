@@ -2,9 +2,9 @@
     "BiologyEntrance": {
         "Image": "images/Routing/Biologie/BioRoomClosedDoor.png",
         "Buttons": {
-            "right": {
-                "Type": "preset",
-                "Image": "right",
+            "biodoor": {
+                "Type": "polygon",
+                "Points": "511,984,485,3,952,7,957,980",
                 "Actions": [["Route", "Biologie2"]]
             }
         }

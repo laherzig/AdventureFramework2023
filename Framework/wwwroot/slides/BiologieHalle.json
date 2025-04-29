@@ -38,6 +38,11 @@
                 "Type": "preset",
                 "Image": "right",
                 "Actions": [["Route", "Biologie15"]]
+            },
+            "bottom": {
+                "Type": "preset",
+                "Image": "bottom",
+                "Actions": [["Route", "Hall2"]]
             }
         }
     },
@@ -327,10 +332,14 @@
                 "Type": "preset",
                 "Image": "right",
                 "Actions": [["Route", "BiologyHall"]]
+            },
+            "biodoor": {
+                "Type": "polygon",
+                "Points": "544,770,826,813,823,3,528,3",
+                "Actions": [["Route", "BiologyEntrance"]]
             }
         }
     },
-
     "BiologyMinigame2": {
         "Type": "Minigame",
         "FallbackSlide": "BiologyHall",
