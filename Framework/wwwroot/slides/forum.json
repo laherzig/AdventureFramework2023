@@ -115,20 +115,10 @@
     "Talk-1": {
         "Image": "images/Routing/Forum/Forum_5.jpg",
         "Buttons": {
-            "left": {
+            "bottom": {
                 "Type": "preset",
-                "Image": "left",
-                "Actions": [["Route", "Forum2"]]
-            },
-            "right": {
-                "Type": "preset",
-                "Image": "right",
+                "Image": "bottom",
                 "Actions": [["Route", "Forum4"]]
-            },
-            "talk": {
-                "Type": "polygon",
-                "Points": "740,748,835,702,903,710,998,708,1044,705,1105,627,1135,528,1183,514,1234,556,1243,609,1294,625,1294,671,1318,698,1333,728,1339,760,1364,781,1364,841,1318,861,1321,917,1323,971,1323,1011,1276,1050,1243,1069,869,1074,895,884,843,837,786,828,754,807,743,780",
-                "Actions": [["Route", "Talk-1"]]
             }
         }
     },
@@ -136,20 +126,10 @@
     "Talk-2": {
         "Image": "images/Routing/Forum/Forum_3.jpg",
         "Buttons": {
-            "left": {
+            "bottom": {
                 "Type": "preset",
-                "Image": "left",
-                "Actions": [["Route", "Forum2"]]
-            },
-            "right": {
-                "Type": "preset",
-                "Image": "right",
-                "Actions": [["Route", "Forum4"]]
-            },
-            "talk": {
-                "Type": "polygon",
-                "Points": "740,748,835,702,903,710,998,708,1044,705,1105,627,1135,528,1183,514,1234,556,1243,609,1294,625,1294,671,1318,698,1333,728,1339,760,1364,781,1364,841,1318,861,1321,917,1323,971,1323,1011,1276,1050,1243,1069,869,1074,895,884,843,837,786,828,754,807,743,780",
-                "Actions": [["Route", "Talk-1"]]
+                "Image": "bottom",
+                "Actions": [["Route", "Forum3"]]
             }
         }
     },
@@ -157,20 +137,10 @@
     "Talk-3": {
         "Image": "images/Routing/Forum/Forum_9.jpg",
         "Buttons": {
-            "left": {
+            "bottom": {
                 "Type": "preset",
-                "Image": "left",
+                "Image": "bottom",
                 "Actions": [["Route", "Forum2"]]
-            },
-            "right": {
-                "Type": "preset",
-                "Image": "right",
-                "Actions": [["Route", "Forum4"]]
-            },
-            "talk": {
-                "Type": "polygon",
-                "Points": "740,748,835,702,903,710,998,708,1044,705,1105,627,1135,528,1183,514,1234,556,1243,609,1294,625,1294,671,1318,698,1333,728,1339,760,1364,781,1364,841,1318,861,1321,917,1323,971,1323,1011,1276,1050,1243,1069,869,1074,895,884,843,837,786,828,754,807,743,780",
-                "Actions": [["Route", "Talk-1"]]
             }
         }
     },
@@ -179,20 +149,10 @@
     "Talk-4": {
         "Image": "images/Routing/Forum/Forum_7.jpg",
         "Buttons": {
-            "left": {
+            "bottom": {
                 "Type": "preset",
-                "Image": "left",
-                "Actions": [["Route", "Forum2"]]
-            },
-            "right": {
-                "Type": "preset",
-                "Image": "right",
-                "Actions": [["Route", "Forum4"]]
-            },
-            "talk": {
-                "Type": "polygon",
-                "Points": "740,748,835,702,903,710,998,708,1044,705,1105,627,1135,528,1183,514,1234,556,1243,609,1294,625,1294,671,1318,698,1333,728,1339,760,1364,781,1364,841,1318,861,1321,917,1323,971,1323,1011,1276,1050,1243,1069,869,1074,895,884,843,837,786,828,754,807,743,780",
-                "Actions": [["Route", "Talk-1"]]
+                "Image": "bottom",
+                "Actions": [["Route", "Forum5"]]
             }
         }
     }
