@@ -151,6 +151,23 @@
                 "Type": "preset",
                 "Image": "right",
                 "Actions": [["Route", "Biologie22"]]
+            },
+            "frog": {
+                "Type": "image",
+                "Image": "images/Routing/Biologie/frog.png",
+                "Points": "949,511,109,110",
+                "Actions": [],
+                "Visible": true
+            },
+            "frogPolygon": {
+                "Type": "polygon",
+                "Points": "853,406,1168,390,1171,514,1156,609,967,630,870,509",
+                "Actions": [
+                    ["SetGameState", "Biologie21.frog", "false"],
+                    ["SetGameState", "Biologie21.frogPolygon", "false"],
+                    ["AddItem", "frog"]
+                ],
+                "Visible": true
             }
         }
     },
