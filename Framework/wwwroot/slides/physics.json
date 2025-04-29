@@ -7,6 +7,11 @@
                 "Image": "top",
                 "Actions": [["Route", "Phy2"]]
             },
+            "bottom": {
+                "Type": "preset",
+                "Image": "bottom",
+                "Actions": [["Route", "GangR8.3"]]
+            },
             "right": {
                 "Type": "preset",
                 "Image": "right",

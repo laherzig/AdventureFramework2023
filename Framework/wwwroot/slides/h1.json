@@ -58,10 +58,60 @@
                 "Type": "preset",
                 "Image": "left",
                 "Actions": [["Route", "H1-7"]]
+            },
+            "top": {
+                "Type": "preset",
+                "Image": "top",
+                "Actions": [["Route", "H1-6-1"]]
             }
         }
     },
 
+    "H1-6-1": {
+        "Image": "images/Routing/H1/0-9.jpg",
+        "Buttons": {
+            "top": {
+                "Type": "preset",
+                "Image": "top",
+                "Actions": [["Route", "H1-6-2"]]
+            },
+            "bottom": {
+                "Type": "preset",
+                "Image": "bottom",
+                "Actions": [["Route", "H1-6"]]
+            }
+        }
+    },
+    "H1-6-2": {
+        "Image": "images/Routing/H1/0-10.jpg",
+        "Buttons": {
+            "polygon": {
+                "Type": "polygon",
+                "Points": "945,212,1161,85,1165,965,951,800",
+                "Actions": [["Route", "H1-6-3"]]
+            },
+            "bottom": {
+                "Type": "preset",
+                "Image": "bottom",
+                "Actions": [["Route", "H1-6-1"]]
+            }
+        }
+    },
+    "H1-6-3": {
+        "Image": "images/Routing/H1/0-11.jpg",
+        "Buttons": {
+            "top": {
+                "Type": "preset",
+                "Image": "top",
+                "Actions": [["Route", "GeoEntrance"]]
+            },
+            "bottom": {
+                "Type": "preset",
+                "Image": "bottom",
+                "Actions": [["Route", "H1-6-2"]]
+            }
+        }
+    },
     "H1-7": {
         "Image": "images/Routing/H1/0-6.jpg",
         "Buttons": {

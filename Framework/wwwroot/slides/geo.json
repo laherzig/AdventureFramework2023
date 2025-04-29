@@ -14,7 +14,12 @@
                 "Image": "right",
                 "Actions": [["Route", "Geo7"]]
                 
-            }
+            },
+            "down": {
+                "Type": "preset",
+                "Image": "bottom",
+                "Actions": [["Route", "H1-6-3"]]
+           }
         }
     },
  

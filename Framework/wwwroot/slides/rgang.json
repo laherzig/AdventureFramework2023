@@ -499,6 +499,56 @@
                 "Type": "preset",
                 "Image": "right",
                 "Actions": [["Route", "GangR9"]]
+            },
+            "are":{
+                "Type": "polygon", 
+                "Points": "626,844,600,390,1057,356,1055,860",
+                "Actions": [["Route", "GangR8.1"]]
+            }
+        }
+    },
+    "GangR8.1": {
+        "Image": "images/Routing/GangR/RGang_8.1.jpg",
+        "Buttons": {
+            "bottom": {
+                "Type": "preset",
+                "Image": "bottom",
+                "Actions": [["Route", "GangR8"]]
+            },
+            "top": {
+                "Type": "preset",
+                "Image": "top",
+                "Actions": [["Route", "GangR8.2"]]
+            }
+        }
+    },
+    "GangR8.2": {
+        "Image": "images/Routing/GangR/RGang_8.2.jpg",
+        "Buttons": {
+            "bottom": {
+                "Type": "preset",
+                "Image": "bottom",
+                "Actions": [["Route", "GangR8"]]
+            },
+            "are":{
+                "Type": "polygon", 
+                "Points": "492,185,897,186,897,974,492,974",
+                "Actions": [["Route", "GangR8.3"]]
+            }
+        }
+    },
+    "GangR8.3": {
+        "Image": "images/Routing/GangR/RGang_8.3.jpg",
+        "Buttons": {
+            "right": {
+                "Type": "preset",
+                "Image": "right",
+                "Actions": [["Route", "GangR8.1"]]
+            },
+            "are":{
+                "Type": "polygon", 
+                "Points": "492,185,897,186,897,974,492,974",
+                "Actions": [["Route", "PhyEntrance"]]
             }
         }
     },
