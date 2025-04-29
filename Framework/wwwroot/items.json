@@ -52,5 +52,10 @@
         "name": "Pipette",
         "description": "Gefüllt mit Nitroglycerin, hochexplosiv",
         "image": "InventoryImages/pipette.png"
+    },
+    "keys": {
+        "name": "Kellerschlüssel",
+        "description": "Ein Schlüssel, der den Keller öffnet",
+        "image": "InventoryImages/keys.png"
     }
 }
