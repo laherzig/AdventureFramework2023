@@ -2,10 +2,15 @@
     "BiologyHall": {
         "Image": "images/Routing/Biologie/BioBothCorridorsFromClassroom.png",
         "Buttons": {
+            "left": {
+                "Type": "preset",
+                "Image": "left",
+                "Actions": [["Route", "Biologie33"]]
+            },
             "right": {
                 "Type": "preset",
                 "Image": "right",
-                "Actions": [["Route", "Biologie13"]]
+                "Actions": [["Route", "Biologie29"]]
             }
         }
     },
@@ -29,15 +34,15 @@
     "Biologie14": {
         "Image": "images/Routing/Biologie/BioFloorEntrance.png",
         "Buttons": {
-            "left": {
-                "Type": "preset",
-                "Image": "left",
-                "Actions": [["Route", "Biologie13"]]
+            "poly": {
+                "Type": "polygon",
+                "Points": "1301,761,1309,144,1079,142,1042,694",
+                "Actions": [["Route", "Biologie26"]]
             },
             "right": {
                 "Type": "preset",
                 "Image": "right",
-                "Actions": [["Route", "Biologie15"]]
+                "Actions": [["Route", "Biologie16"]]
             },
             "bottom": {
                 "Type": "preset",
@@ -150,18 +155,18 @@
             "right": {
                 "Type": "preset",
                 "Image": "right",
-                "Actions": [["Route", "Biologie22"]]
+                "Actions": [["Route", "Biologie32"]]
             },
             "frog": {
                 "Type": "image",
                 "Image": "images/Routing/Biologie/frog.png",
-                "Points": "949,511,109,110",
+                "Points": "1100,511,109,110",
                 "Actions": [],
                 "Visible": true
             },
             "frogPolygon": {
                 "Type": "polygon",
-                "Points": "853,406,1168,390,1171,514,1156,609,967,630,870,509",
+                "Points": "900,406,1200,390,1200,514,1200,609,1000,630,900,509",
                 "Actions": [
                     ["SetGameState", "Biologie21.frog", "false"],
                     ["SetGameState", "Biologie21.frogPolygon", "false"],
@@ -235,14 +240,14 @@
     "Biologie26": {
         "Image": "images/Routing/Biologie/BioLeftCorridorToClassroom_1.png",
         "Buttons": {
-            "left": {
+            "bottom": {
                 "Type": "preset",
-                "Image": "left",
-                "Actions": [["Route", "Biologie25"]]
+                "Image": "bottom",
+                "Actions": [["Route", "Biologie14"]]
             },
-            "right": {
+            "top": {
                 "Type": "preset",
-                "Image": "right",
+                "Image": "top",
                 "Actions": [["Route", "Biologie27"]]
             }
         }
@@ -250,14 +255,14 @@
     "Biologie27": {
         "Image": "images/Routing/Biologie/BioLeftCorridorToClassroom_2.png",
         "Buttons": {
-            "left": {
+            "bottom": {
                 "Type": "preset",
-                "Image": "left",
+                "Image": "bottom",
                 "Actions": [["Route", "Biologie26"]]
             },
-            "right": {
+            "top": {
                 "Type": "preset",
-                "Image": "right",
+                "Image": "top",
                 "Actions": [["Route", "Biologie28"]]
             }
         }
@@ -265,15 +270,20 @@
     "Biologie28": {
         "Image": "images/Routing/Biologie/BioLeftCorridorToClassroom_3.png",
         "Buttons": {
-            "left": {
+            "bottom": {
                 "Type": "preset",
-                "Image": "left",
+                "Image": "bottom",
                 "Actions": [["Route", "Biologie27"]]
             },
             "right": {
                 "Type": "preset",
                 "Image": "right",
                 "Actions": [["Route", "Biologie29"]]
+            },
+            "biodoor": {
+                "Type": "polygon",
+                "Points": "507,885,477,6,829,0,843,840",
+                "Actions": [["Route", "BiologyEntrance"]]
             }
         }
     },
@@ -283,11 +293,11 @@
             "left": {
                 "Type": "preset",
                 "Image": "left",
-                "Actions": [["Route", "Biologie28"]]
+                "Actions": [["Route", "BiologyHall"]]
             },
-            "right": {
+            "top": {
                 "Type": "preset",
-                "Image": "right",
+                "Image": "top",
                 "Actions": [["Route", "Biologie30"]]
             }
         }
@@ -295,14 +305,14 @@
     "Biologie30": {
         "Image": "images/Routing/Biologie/BioRightCorridorFromClassroom_2.png",
         "Buttons": {
-            "left": {
+            "bottom": {
                 "Type": "preset",
-                "Image": "left",
+                "Image": "bottom",
                 "Actions": [["Route", "Biologie29"]]
             },
-            "right": {
+            "top": {
                 "Type": "preset",
-                "Image": "right",
+                "Image": "top",
                 "Actions": [["Route", "Biologie31"]]
             }
         }
@@ -318,21 +328,21 @@
             "right": {
                 "Type": "preset",
                 "Image": "right",
-                "Actions": [["Route", "Biologie32"]]
+                "Actions": [["Route", "Biologie14"]]
             }
         }
     },
     "Biologie32": {
         "Image": "images/Routing/Biologie/BioRightCorridorToClassroom_2.png",
         "Buttons": {
-            "left": {
+            "bottom": {
                 "Type": "preset",
-                "Image": "left",
-                "Actions": [["Route", "Biologie31"]]
+                "Image": "bottom",
+                "Actions": [["Route", "Biologie14"]]
             },
-            "right": {
+            "top": {
                 "Type": "preset",
-                "Image": "right",
+                "Image": "top",
                 "Actions": [["Route", "Biologie33"]]
             }
         }
@@ -340,14 +350,14 @@
     "Biologie33": {
         "Image": "images/Routing/Biologie/BioRightCorridorToClassroom_3.png",
         "Buttons": {
+            "bottom": {
+                "Type": "preset",
+                "Image": "bottom",
+                "Actions": [["Route", "Biologie32"]]
+            },
             "left": {
                 "Type": "preset",
                 "Image": "left",
-                "Actions": [["Route", "Biologie32"]]
-            },
-            "right": {
-                "Type": "preset",
-                "Image": "right",
                 "Actions": [["Route", "BiologyHall"]]
             },
             "biodoor": {

@@ -20,7 +20,7 @@
     "frog": {
         "name": "frog",
         "description": "One lick away...",
-        "image": "InventoryImages/Glass_Frog.jpg"
+        "image": "InventoryImages/frog.png"
     },
 
     "nitric_acid": {
@@ -57,5 +57,11 @@
         "name": "Kellerschlüssel",
         "description": "Ein Schlüssel, der den Keller öffnet",
         "image": "InventoryImages/keys.png"
+    },
+
+    "redbull": {
+        "name": "RedBull",
+        "description": "",
+        "image": "InventoryImages/redbull.png"
     }
 }

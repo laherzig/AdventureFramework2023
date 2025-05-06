@@ -2,6 +2,11 @@
     "BiologyEntrance": {
         "Image": "images/Routing/Biologie/BioRoomClosedDoor.png",
         "Buttons": {
+            "bottom": {
+                "Type": "preset",
+                "Image": "bottom",
+                "Actions": [["Route", "Biologie33"]]
+            },
             "biodoor": {
                 "Type": "polygon",
                 "Points": "511,984,485,3,952,7,957,980",
@@ -13,15 +18,15 @@
     "Biologie2": {
         "Image": "images/Routing/Biologie/BioRoomOpenedDoor.png",
         "Buttons": {
-            "left": {
+            "top": {
                 "Type": "preset",
-                "Image": "left",
-                "Actions": [["Route", "BiologyEntrance"]]
-            },
-            "right": {
-                "Type": "preset",
-                "Image": "right",
+                "Image": "top",
                 "Actions": [["Route", "Biologie3"]]
+            },
+            "bottom": {
+                "Type": "preset",
+                "Image": "bottom",
+                "Actions": [["Route", "BiologyEntrance"]]
             }
         }
     },
@@ -85,6 +90,27 @@
                 "Type": "preset",
                 "Image": "right",
                 "Actions": [["Route", "Biologie7"]]
+            },
+            "Redbull": {
+                "Type": "image",
+                "Image": "images/red-bull.png",
+                "Points": "1400,700,80,80",
+                "Actions": [],
+                "Visible": true
+            },
+            "BullPolygon": {
+                "Type": "polygon",
+                "Points": "1424,715,1474,715,1474,784,1420,785",
+                "Actions": [
+                    ["SetGameState", "Biologie6.Redbull", "false"],
+                    [
+                        "SetGameState",
+                        "Biologie6.BullPolygon",
+                        "false"
+                    ],
+                    ["AddItem", "redbull"]
+                ],
+                "Visible": true
             }
         }
     },
