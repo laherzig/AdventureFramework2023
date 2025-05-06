@@ -3,18 +3,18 @@ namespace Framework.Minigames.MinigameDefClasses;
 public class BiologyDialogue : MinigameDefBase
 {
 
-    public override string BackgroundImage {get; set;} = "minigame_assests/Biology_assets/Forum_9.jpg"; // Background Image
+	public override string BackgroundImage { get; set; } = "minigame_assets/Biology_assets/Forum_9.jpg"; // Background Image
 
 
 	//DIALOGUE STUFF
-	private Image QuitButton { get; set;}
-	private Image ForwardButton { get; set;}
+	private Image QuitButton { get; set; }
+	private Image ForwardButton { get; set; }
 
 	private Dialogue dialogue;
 
 	//MINIGAME STUFF
 	[Element]
-	public required Rectangle NpcHitBox { get; set;}
+	public required Rectangle NpcHitBox { get; set; }
 	List<List<string>> messages = [
 		["Du", "Hallo! Könnt ihr mir sagen wo mein Laptop ist?"],
 		["Mauzi", "Vielleicht... wenn du uns helfen kannst :3"],
@@ -22,34 +22,37 @@ public class BiologyDialogue : MinigameDefBase
 		["Bautzi", "Wir sind richtig schlecht in Bio, kannst du uns helfen?"],
 		["Du", "ok..."],
 	];
-		List<List<string>> VictoryMessage = [
-		["Du", "Viel zu einfach"],
+	List<List<string>> VictoryMessage = [
+	["Du", "Viel zu einfach"],
 		["Mauzi", "OMG danke!"],
 		["Bautzi", "Endlich kann ich meinen Eltern eine Note zeigen"],
 		["Du", "Nun raus mit der Sprache, helft mir jetzt!"],
 		["Mautzi", ""],
 	];
-		List<List<string>> FailureMessage = [
-		["Du", "Noch nicht fertig, sorry"],
+	List<List<string>> FailureMessage = [
+	["Du", "Noch nicht fertig, sorry"],
 		["Mauzi", "Dann flieg ich halt raus"],
 		["Bautzi", "L"],
 	];
-	public BiologyDialogue(){
+	public BiologyDialogue()
+	{
 
 		dialogue = new Dialogue(messages);
 
-		NpcHitBox = new(){
+		NpcHitBox = new()
+		{
 			X = 115,
 			Y = 400,
 			Width = 500,
 			Height = 800,
 			Fill = "transparent",
-			OnClick = async (args) => {Console.WriteLine("Click On NPC"); await StartDialogueAsync();}
+			OnClick = async (args) => { Console.WriteLine("Click On NPC"); await StartDialogueAsync(); }
 		};
 
 	}
 
-	public async Task StartDialogueAsync(){
+	public async Task StartDialogueAsync()
+	{
 		bool quit = false;
 		bool forward = false;
 
@@ -60,8 +63,8 @@ public class BiologyDialogue : MinigameDefBase
 		AddElement(QuitButton);
 		AddElement(ForwardButton);
 
-		QuitButton.OnClick = (args) => {quit = true; Console.WriteLine("Quit"); };
-		ForwardButton.OnClick = (args) => {forward = true; Console.WriteLine("Forward");};
+		QuitButton.OnClick = (args) => { quit = true; Console.WriteLine("Quit"); Finish(null, "Forum2"); };
+		ForwardButton.OnClick = (args) => { forward = true; Console.WriteLine("Forward"); };
 
 		Update();
 		if (GameState.GetState("MGBioDone") == true)
@@ -73,32 +76,37 @@ public class BiologyDialogue : MinigameDefBase
 			messages = FailureMessage;
 		}
 
-		foreach (List<string> speech in messages){
+		foreach (List<string> speech in messages)
+		{
 			int x_message = 100;
-            int y_message = 0;
+			int y_message = 0;
 
-            if (speech[0] == "Du"){
-                x_message = 500;
-                y_message = 200;
-                Console.WriteLine("Du is speaking");
-            }
-            else if (speech[0] == "Mautzi"){
-                x_message = 500;
-                y_message = 201;
-            }
-            else if (speech[1] == "Du"){
-                x_message = 500;
-                y_message = 200;
-            }
-            else if (speech[0] == "Bautzi"){
-                x_message = 500;
-                y_message = 202;
-            }
-            else
-            {
-                x_message = 500;
-                y_message = 200;
-            }
+			if (speech[0] == "Du")
+			{
+				x_message = 500;
+				y_message = 200;
+				Console.WriteLine("Du is speaking");
+			}
+			else if (speech[0] == "Mautzi")
+			{
+				x_message = 500;
+				y_message = 201;
+			}
+			else if (speech[1] == "Du")
+			{
+				x_message = 500;
+				y_message = 200;
+			}
+			else if (speech[0] == "Bautzi")
+			{
+				x_message = 500;
+				y_message = 202;
+			}
+			else
+			{
+				x_message = 500;
+				y_message = 200;
+			}
 			GameObjectContainer<SVGElement> Bubble = dialogue.DrawSpeechBubble(speech[0], speech[1], autoPlacement: false, x: x_message, y: y_message);
 
 			AddElementsInContainer(Bubble);
@@ -107,11 +115,13 @@ public class BiologyDialogue : MinigameDefBase
 
 			await WaitForConditionAsync(() => forward || quit);
 
-			foreach (string key in Bubble.Keys){
+			foreach (string key in Bubble.Keys)
+			{
 				Elements.Remove(key);
 			}
 
-			if (quit == true){
+			if (quit == true)
+			{
 
 				Update();
 				break;
@@ -126,12 +136,12 @@ public class BiologyDialogue : MinigameDefBase
 	}
 
 	private async Task WaitForConditionAsync(Func<bool> condition)
-{
-    while (!condition())
-    {
-        await Task.Delay(100); // Check the condition every 100 milliseconds
-    }
-}
+	{
+		while (!condition())
+		{
+			await Task.Delay(100); // Check the condition every 100 milliseconds
+		}
+	}
 
 
 
