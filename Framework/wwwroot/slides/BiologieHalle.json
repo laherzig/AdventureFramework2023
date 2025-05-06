@@ -177,6 +177,15 @@
             }
         }
     },
+    "BioVid": {
+        "Image": "images/Routing/Other/black.png",
+        "Buttons": {},
+        "OnEnter": [
+            ["Sleep", "1000"],
+            ["PlayVideo", "0,0,1080,1620", "videos/Frosch.mp4"],
+            ["Route", "Biologie32"]
+        ]
+    },
     "Biologie22": {
         "Image": "images/Routing/Biologie/BioFloorMinigame_7.png",
         "Buttons": {

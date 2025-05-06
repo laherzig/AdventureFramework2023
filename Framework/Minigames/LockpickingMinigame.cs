@@ -507,7 +507,7 @@ public class LockpickingMinigame : MinigameDefBase
 								{
 									BackgroundImage = "minigame_assets/LockPick_assets/images/GeoeffneterLocker.png";
 									Update();
-									Finish(null, "Biologie32");
+									Finish(null, "BioVid");
 								}
 								else
 								{
@@ -621,7 +621,7 @@ public class LockpickingMinigame : MinigameDefBase
 							BackgroundImage = "minigame_assets/LockPick_assets/images/GeoeffneterLocker.png";
 							SoundService.StopMusic();
 							Update();
-							Finish(null, "Biologie32");
+							Finish(null, "BioVid");
 						}
 						Update();
 					}
