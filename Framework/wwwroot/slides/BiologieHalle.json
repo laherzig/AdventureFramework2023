@@ -181,8 +181,10 @@
         "Image": "images/Routing/Other/black.png",
         "Buttons": {},
         "OnEnter": [
+            ["StopMusic", ""],
             ["Sleep", "1000"],
             ["PlayVideo", "0,0,1080,1620", "videos/Frosch.mp4"],
+            ["PlayMusic", "audio/music/gameplay_a.wav"],
             ["Route", "Biologie32"]
         ]
     },

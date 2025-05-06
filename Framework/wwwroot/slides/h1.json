@@ -1,4 +1,3 @@
-
 {
     "H1-1": {
         "Image": "images/Routing/H1/0-0.jpg",
@@ -207,16 +206,11 @@
                 "Points": "747,810,757,863,797,878,829,872,846,858,846,828,843,805,827,796,810,795,793,795,774,795,756,799",
                 "Actions": [
                     ["SetGameState", "H1-6-1-1.Keys", "false"],
-                    [
-                        "SetGameState",
-                        "H1-6-1-1.KeysPolygon",
-                        "false"
-                    ],
+                    ["SetGameState", "H1-6-1-1.KeysPolygon", "false"],
                     ["AddItem", "keys"]
                 ],
                 "Visible": true
             }
-
         }
     },
     "H1-6-2": {
@@ -282,7 +276,6 @@
                 "Image": "right",
                 "Actions": [["Route", "H1-8-1"]]
             }
-
         }
     },
     "H1-8-1": {
@@ -303,7 +296,6 @@
                 "Image": "top",
                 "Actions": [["Route", "H1-7"]]
             }
-
         }
     },
     "H1-9": {
@@ -318,8 +310,9 @@
                 "Type": "polygon",
                 "Points": "602,143,1060,140,1062,1074,604,1076",
                 "Actions": [
-                    ["RequireItem", "keys"], 
-                    ["Route", "Hit"]]
+                    ["RequireItem", "keys"],
+                    ["Route", "Hit"]
+                ]
             }
         }
     },
@@ -328,9 +321,9 @@
         "Buttons": {},
         "OnEnter": [
             ["Sleep", "1000"],
+            ["StopMusic", ""],
             ["PlayVideo", "0,0,1080,1620", "videos/knocked-out.mp4"],
             ["Route", "Awakening"]
         ]
     }
 }
-

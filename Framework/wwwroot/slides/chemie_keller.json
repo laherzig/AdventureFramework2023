@@ -5,6 +5,7 @@
         "OnEnter": [
             ["Sleep", "1000"],
             ["PlayVideo", "0,0,1080,1620", "videos/Chemiekeller_Aufwachen.mp4"],
+            ["PlayMusic", "audio/music/gameplay_b.wav"],
             ["Route", "ChemieKeller_s_e"]
         ]
     },
@@ -55,6 +56,7 @@
                 "Actions": [
                     ["RequireItem", "nitro_beaker"],
                     ["RemoveItem", "nitro_beaker"],
+
                     ["PlayVideo", "0,0,1080,1620", "videos/fridge_wait.mp4"],
                     ["SetGameState", "ChemieKeller_s.FridgePolygon", "false"],
                     ["AddItem", "nitrogly_beaker"]
@@ -597,6 +599,7 @@
     },
     "BossFightMinigame": {
         "Type": "Minigame",
+        "OnEnter": [["PlayMusic", "audio/music/bossfight.wav"]],
         "MinigameDefClassName": "Framework.Minigames.MinigameDefClasses.BossFightMinigame"
     },
     "ChemieKeller_Minigame1": {
