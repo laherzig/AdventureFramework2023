@@ -101,8 +101,11 @@ public class LockpickingMinigame : MinigameDefBase
 
 
 	}
+	public override string DefaultRoute { get; set; } = "Biologie21";
 	public LockpickingMinigame()
 	{
+		BackButton.Visible = true;
+
 		if (BackgroundImage == "minigame_assets/LockPick_assets/images/LockerVonVorne.png")
 		{
 			rectLock = new()
