@@ -135,7 +135,7 @@
     },
 
     "Talk-3": {
-        "Image": "images/Routing/Forum/Forum_9.jpg",
+        "Image": "images/Routing/Forum/Talk-3.jpg",
         "Buttons": {
             "bottom": {
                 "Type": "preset",
