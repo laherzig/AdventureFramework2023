@@ -136,6 +136,11 @@
     "Geo8": {
         "Image": "images/Routing/Geographie/Geography_Exit_2.png",
         "Buttons": {
+            "top": {
+                "Type": "preset",
+                "Image": "top",
+                "Actions": [["Route", "H1-6-3"]]
+            },
             "down": {
                 "Type": "preset",
                 "Image": "bottom",

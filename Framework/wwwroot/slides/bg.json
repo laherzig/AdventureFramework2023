@@ -4,6 +4,11 @@
         
         "Image": "images/Routing/BG/BG_1_1.png",
         "Buttons": {
+            "bottom": {
+                "Type": "preset",
+                "Image": "bottom",
+                "Actions": [["Route", "H1-1-4"]]
+            },
             "right": {
                 "Type": "preset",
                 "Image": "right",

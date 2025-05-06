@@ -448,7 +448,7 @@ public class PhMinigame : MinigameDefBase
 
             }
             BackgroundImage = "minigame_assets/PhMinigame_assets/edited/FinishedGameBackground.png";
-            Finish(null, null);
+            Finish(null, "Phy10");
             Update();
         }
     }

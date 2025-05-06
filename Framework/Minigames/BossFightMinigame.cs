@@ -78,11 +78,11 @@ public class BossFightMinigame : MinigameDefBase
 			await Task.Delay(2000);
 			if (PlayerHealth <= 0)
 			{
-				Finish(null, "Placeholder.cs"); //!!!!!!bitte SlideID von Abspann einfügen
+				Finish(null, "Bad"); //!!!!!!bitte SlideID von Abspann einfügen
 			}
 			else if (VillanHealth <= 0)
 			{
-				Finish(null, "Placeholder.cs"); ////!!!!!!!!bitte SlideID von Abspann einfügen
+				Finish(null, "Good"); ////!!!!!!!!bitte SlideID von Abspann einfügen
 			}
 		}
 
@@ -184,7 +184,7 @@ public class BossFightMinigame : MinigameDefBase
 			// GameState.RemoveItem("RedBull"); //Wir hoffen nur ein RedBull wird hier entfernt
 			// </original code>
 			// <edited by laurin>
-			GameState.ChangeRedBull(-1);
+			//GameState.ChangeRedBull(-1);
 			// </edited by laurin>
 			Update();
 			await Task.Delay(1000);

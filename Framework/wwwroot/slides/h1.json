@@ -7,10 +7,90 @@
                 "Type": "preset",
                 "Image": "left",
                 "Actions": [["Route", "H1-2"]]
+            },
+            "bottom": {
+                "Type": "preset",
+                "Image": "bottom",
+                "Actions": [["Route", "Hall4"]]
+            },
+            "right": {
+                "Type": "preset",
+                "Image": "right",
+                "Actions": [["Route", "H1-1-2"]]
             }
         }
     },
 
+    "H1-1-2": {
+        "Image": "images/Routing/H1/0-0-2.jpg",
+        "Buttons": {
+            "left": {
+                "Type": "preset",
+                "Image": "left",
+                "Actions": [["Route", "H1-1"]]
+            },
+            "top": {
+                "Type": "preset",
+                "Image": "top",
+                "Actions": [["Route", "H1-1-3"]]
+            }
+        }
+    },
+    "H1-1-3": {
+        "Image": "images/Routing/H1/0-0-3.jpg",
+        "Buttons": {
+            "left": {
+                "Type": "preset",
+                "Image": "left",
+                "Actions": [["Route", "H1-1-5"]]
+            },
+            "bottom": {
+                "Type": "preset",
+                "Image": "bottom",
+                "Actions": [["Route", "H1-1-2"]]
+            },
+            "polygon": {
+                "Type": "polygon",
+                "Points": "983,270,1315,271,1315,921,982,931",
+                "Actions": [["Route", "H1-1-4"]]
+            }
+        }
+    },
+    "H1-1-4": {
+        "Image": "images/Routing/H1/0-0-4.jpg",
+        "Buttons": {
+            "left": {
+                "Type": "preset",
+                "Image": "left",
+                "Actions": [["Route", "H1-1-5"]]
+            },
+            "bottom": {
+                "Type": "preset",
+                "Image": "bottom",
+                "Actions": [["Route", "H1-1-3"]]
+            },
+            "polygon": {
+                "Type": "polygon",
+                "Points": "983,270,1315,271,1315,921,982,931",
+                "Actions": [["Route", "ArtEntrance"]]
+            }
+        }
+    },
+    "H1-1-5": {
+        "Image": "images/Routing/H1/0-0-5.jpg",
+        "Buttons": {
+            "top": {
+                "Type": "preset",
+                "Image": "top",
+                "Actions": [["Route", "H1-3"]]
+            },
+            "right": {
+                "Type": "preset",
+                "Image": "right",
+                "Actions": [["Route", "H1-1-3"]]
+            }
+        }
+    },
     "H1-2": {
         "Image": "images/Routing/H1/0-1.jpg",
         "Buttons": {
@@ -24,6 +104,11 @@
     "H1-3": {
         "Image": "images/Routing/H1/0-2.jpg",
         "Buttons": {
+            "bottom": {
+                "Type": "preset",
+                "Image": "bottom",
+                "Actions": [["Route", "H1-2"]]
+            },
             "top": {
                 "Type": "preset",
                 "Image": "top",
@@ -191,6 +276,32 @@
                 "Type": "polygon",
                 "Points": "747,359,943,365,949,794,758,821",
                 "Actions": [["Route", "H1-9"]]
+            },
+            "right": {
+                "Type": "preset",
+                "Image": "right",
+                "Actions": [["Route", "H1-8-1"]]
+            }
+
+        }
+    },
+    "H1-8-1": {
+        "Image": "images/Routing/H1/0-7-1.jpg",
+        "Buttons": {
+            "bottom": {
+                "Type": "preset",
+                "Image": "bottom",
+                "Actions": [["Route", "Hall8"]]
+            },
+            "left": {
+                "Type": "preset",
+                "Image": "left",
+                "Actions": [["Route", "H1-8"]]
+            },
+            "top": {
+                "Type": "preset",
+                "Image": "top",
+                "Actions": [["Route", "H1-7"]]
             }
 
         }

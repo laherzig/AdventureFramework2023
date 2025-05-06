@@ -1,0 +1,29 @@
+{
+    "Good": {
+        "Image": "images/Other/black.png",
+        "Buttons": {},
+        "OnEnter": [
+            ["Sleep", "1000"],
+            ["PlayVideo", "0,0,1080,1620", "videos/good.mp4"],
+            ["Route", "End"]
+        ]
+    },
+    "Bad": {
+        "Image": "images/Other/black.png",
+        "Buttons": {},
+        "OnEnter": [
+            ["Sleep", "1000"],
+            ["PlayVideo", "0,0,1080,1620", "videos/bad.mp4"],
+            ["Route", "End"]
+        ]
+    },
+    "End": {
+        "Image": "images/Other/black.png",
+        "Buttons": {},
+        "OnEnter": [
+            ["Sleep", "1000"],
+            ["PlayVideo", "0,0,1080,1620", "videos/end.mp4"],
+            ["Route", ""]
+        ]
+    }
+}

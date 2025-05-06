@@ -37,12 +37,97 @@
         }
     },
     "Hall3": {
+        "Image": "images/Routing/Haupthall/HR3.png",
+        "Buttons": {
+            "bottom": {
+                "Type": "preset",
+                "Image": "bottom",
+                "Actions": [["Route", "Hall1"]]
+            },
+            "polygon": {
+                "Type": "polygon",
+                "Points": "927,288,1257,252,1225,844,926,669",
+                "Actions": [["Route", "Hall5"]]
+            },
+            "right": {
+                "Type": "preset",
+                "Image": "right",
+                "Actions": [["Route", "Hall4"]]
+            }
+        }
+    },
+    "Hall4": {
         "Image": "images/Routing/Haupthall/HR4.png",
         "Buttons": {
+            "left": {
+                "Type": "preset",
+                "Image": "left",
+                "Actions": [["Route", "Hall3"]]
+            },
             "top": {
                 "Type": "preset",
                 "Image": "top",
                 "Actions": [["Route", "H1-1"]]
+            }
+        }
+    },
+    "Hall5": {
+        "Image": "images/Routing/Haupthall/HR5.png",
+        "Buttons": {
+            "bottom": {
+                "Type": "preset",
+                "Image": "bottom",
+                "Actions": [["Route", "Hall3"]]
+            },
+            "top": {
+                "Type": "preset",
+                "Image": "top",
+                "Actions": [["Route", "Hall6"]]
+            }
+        }
+    },
+    "Hall6": {
+        "Image": "images/Routing/Haupthall/HR6.png",
+        "Buttons": {
+            "bottom": {
+                "Type": "preset",
+                "Image": "bottom",
+                "Actions": [["Route", "Hall5"]]
+            },
+            "top": {
+                "Type": "preset",
+                "Image": "top",
+                "Actions": [["Route", "Hall7"]]
+            }
+        }
+    },
+    "Hall7": {
+        "Image": "images/Routing/Haupthall/HR7.png",
+        "Buttons": {
+            "bottom": {
+                "Type": "preset",
+                "Image": "bottom",
+                "Actions": [["Route", "Hall6"]]
+            },
+            "right": {
+                "Type": "preset",
+                "Image": "right",
+                "Actions": [["Route", "Hall8"]]
+            }
+        }
+    },
+    "Hall8": {
+        "Image": "images/Routing/Haupthall/HR8.png",
+        "Buttons": {
+            "bottom": {
+                "Type": "preset",
+                "Image": "bottom",
+                "Actions": [["Route", "Hall7"]]
+            },
+            "top": {
+                "Type": "preset",
+                "Image": "top",
+                "Actions": [["Route", "H1-8-1"]]
             }
         }
     },

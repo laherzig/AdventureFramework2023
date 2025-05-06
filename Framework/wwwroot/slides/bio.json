@@ -103,6 +103,7 @@
                 "Points": "1424,715,1474,715,1474,784,1420,785",
                 "Actions": [
                     ["SetGameState", "Biologie6.Redbull", "false"],
+		            ["ChangeRedBull","1"],
                     [
                         "SetGameState",
                         "Biologie6.BullPolygon",
