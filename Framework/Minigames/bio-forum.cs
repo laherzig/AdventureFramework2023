@@ -3,7 +3,7 @@ namespace Framework.Minigames.MinigameDefClasses;
 public class BiologyDialogue : MinigameDefBase
 {
 
-    public override string BackgroundImage {get; set;} = "minigame_assests/Biology_assets/IMG_5785.JPG"; // Background Image
+    public override string BackgroundImage {get; set;} = "minigame_assests/Biology_assets/Forum_9.jpg"; // Background Image
 
 
 	//DIALOGUE STUFF

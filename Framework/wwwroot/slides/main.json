@@ -8,6 +8,11 @@
                 "Points": "877,172,1119,176,1144,191,1255,194,1380,635,1019,624,866,508",
                 "Actions": [["Route", "Hall3"]]
             },
+            "bottom": {
+                "Type": "preset",
+                "Image": "bottom",
+                "Actions": [["Route", "GangR8"]]
+            },
             "polygon2": {
                 "Type": "polygon",
                 "Points": "347,181,751,178,761,504,329,645,252,179",
