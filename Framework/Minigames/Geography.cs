@@ -101,8 +101,8 @@ public class Geography : MinigameDefBase
                         Update();
                         if (lifes == 0)
                         {
-                            SoundService.PlaySound("minigame_assets/Minigame_Geographie/fail.wav");
-                            Finish(null, "Geography");
+                            //SoundService.PlaySound("minigame_assets/Minigame_Geographie/fail.wav");
+                            Finish(null, "Geo6");
                         }
                     }
                 }
@@ -140,8 +140,8 @@ public class Geography : MinigameDefBase
                         Update();
                         if (lifes == 0)
                         {
-                            SoundService.PlaySound("minigame_assets/Minigame_Geographie/fail.wav");
-                            Finish(null, "Geography");
+                            //SoundService.PlaySound("minigame_assets/Minigame_Geographie/fail.wav");
+                            Finish(null, "Geo6");
                         }
                     }
                 }
@@ -179,8 +179,8 @@ public class Geography : MinigameDefBase
                         Update();
                         if (lifes == 0)
                         {
-                            SoundService.PlaySound("minigame_assets/Minigame_Geographie/fail.wav");
-                            Finish(null, "Geography");
+                            //SoundService.PlaySound("minigame_assets/Minigame_Geographie/fail.wav");
+                            Finish(null, "Geo6");
                         }
                     }
                 }
@@ -203,7 +203,7 @@ public class Geography : MinigameDefBase
                     {
                         if (round >= 4)
                         {
-                            Finish(null, "Geography");
+                            Finish(null, "Geo6-1");
                         }
                         else
                         {

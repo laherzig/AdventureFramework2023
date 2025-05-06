@@ -36,6 +36,16 @@
             }
         }
     },
+    "Hall2-1": {
+        "Image": "images/Routing/Haupthall/Answer.png",
+        "Buttons": {
+            "bottom": {
+                "Type": "preset",
+                "Image": "bottom",
+                "Actions": [["Route", "Hall2"]]
+            }
+        }
+    },
     "Hall3": {
         "Image": "images/Routing/Haupthall/HR3.png",
         "Buttons": {

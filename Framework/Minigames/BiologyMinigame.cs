@@ -235,6 +235,7 @@ public class BiologyMinigame : MinigameDefBase
         z = "";
         a = "Game Over!";
         SoundService.PlayMusic("minigame_assets/Biology_assets/SpongeBob sad music.m4a");
+        Finish(null, "Biologie7");
     }
     else if (y == 4)
     {
@@ -242,6 +243,7 @@ public class BiologyMinigame : MinigameDefBase
         z = "";
         a = "You win!";
         SoundService.PlayMusic("minigame_assets/Biology_assets/Yippee - Meme Sound Effect.m4a");
+        Finish(null, "Biologie7-1");
     }
     RealLifeText.InnerText = x.ToString();
     RealScoreText.InnerText = y.ToString();

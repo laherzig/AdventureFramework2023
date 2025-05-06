@@ -116,6 +116,15 @@
             }
         }},
    
+    "Geo6-1": {
+        "Image": "images/Routing/Geographie/Answer.jpg",
+        "Buttons": {
+            "down": {
+                "Type": "preset",
+                "Image": "bottom",
+                "Actions": [["Route", "Geo6"]]
+            }
+        }},
  
     "Geo7": {
         "Image": "images/Routing/Geographie/Geography_Exit_1.png",
@@ -136,7 +145,7 @@
     "Geo8": {
         "Image": "images/Routing/Geographie/Geography_Exit_2.png",
         "Buttons": {
-            "top": {
+            "": {
                 "Type": "preset",
                 "Image": "top",
                 "Actions": [["Route", "H1-6-3"]]

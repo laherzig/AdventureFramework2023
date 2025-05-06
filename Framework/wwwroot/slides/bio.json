@@ -135,6 +135,27 @@
             }
         }
     },
+    "Biologie7-1": {
+        "Image": "images/Routing/Biologie/Answer.jpg",
+        "Buttons": {
+            "left": {
+                "Type": "preset",
+                "Image": "left",
+                "Actions": [["Route", "Biologie6"]]
+            },
+            "right": {
+                "Type": "preset",
+                "Image": "right",
+                "Actions": [["Route", "Biologie8"]]
+            },
+            "Blackboard": {
+                "Type": "polygon",
+                "Points": "1203,0,1205,495,376,500,373,-2",
+                "Actions": [["Route", "BiologyMinigame"]],
+                "Visible": true
+            }
+        }
+    },
     "Biologie8": {
         "Image": "images/Routing/Biologie/Bio_s_e.png",
         "Buttons": {
