@@ -1,7 +1,6 @@
 {
     "Start": {
-        "Tags": ["START"],
-        "Image": "images/Routing/Other/kanti.png",
+        "Image": "images/Routing/Other/black.png",
         "Buttons": {},
         "OnEnter": [
             ["Sleep", "1000"],
@@ -11,6 +10,7 @@
     },
 
     "Forum1": {
+        "Tags": ["START"],
         "Image": "images/Routing/Forum/Forum_1.jpg",
         "Buttons": {
             "top": {
