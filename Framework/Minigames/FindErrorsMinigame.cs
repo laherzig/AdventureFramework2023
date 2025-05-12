@@ -24,13 +24,14 @@ public class FindErrorsMinigame : MinigameDefBase
 	[Element] public Rectangle Error9 { get; set; }
 
 
-
+	public override string DefaultRoute { get; set; } = "Art3";
 	public FindErrorsMinigame()
 	{
+		BackButton.Visible = true;
 
 		Rects = new()
 		{
-			// <edit by laurin>
+			// <edit by laurin> 
 			X = 1818 * 1620 / 1920,
 			Y = 200,
 			// </edit by laurin>
@@ -289,7 +290,7 @@ public class FindErrorsMinigame : MinigameDefBase
 		errorsspotted++;
 		if (errorsspotted == 10)
 		{
-			Finish(null, "IMG_2455");
+			Finish(null, "Art3");
 		}
 	}
 }

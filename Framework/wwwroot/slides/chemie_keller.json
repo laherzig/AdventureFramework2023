@@ -56,8 +56,9 @@
                 "Actions": [
                     ["RequireItem", "nitro_beaker"],
                     ["RemoveItem", "nitro_beaker"],
-
+                    ["StopMusic", ""],
                     ["PlayVideo", "0,0,1080,1620", "videos/fridge_wait.mp4"],
+                    ["PlayMusic", "audio/music/gameplay_b.wav"],
                     ["SetGameState", "ChemieKeller_s.FridgePolygon", "false"],
                     ["AddItem", "nitrogly_beaker"]
                 ],
@@ -592,6 +593,7 @@
                 "Points": "645,1079,645,61,744,2,973,8,973,1079,956,1079",
                 "Actions": [
                     ["PlaySound", "audio/fight.mp3"],
+                    ["PlayMusic", "audio/bossfight.wav"],
                     ["Route", "BossFightMinigame"]
                 ]
             }
@@ -599,7 +601,6 @@
     },
     "BossFightMinigame": {
         "Type": "Minigame",
-        "OnEnter": [["PlayMusic", "audio/music/bossfight.wav"]],
         "MinigameDefClassName": "Framework.Minigames.MinigameDefClasses.BossFightMinigame"
     },
     "ChemieKeller_Minigame1": {

@@ -26,6 +26,11 @@
                 "Type": "preset",
                 "Image": "top",
                 "Actions": [["Route", "Phy4"]]
+            },
+            "bottom": {
+                "Type": "preset",
+                "Image": "bottom",
+                "Actions": [["Route", "PhyEntrance"]]
             }
         }
     },

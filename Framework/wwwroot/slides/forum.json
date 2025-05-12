@@ -3,6 +3,7 @@
         "Image": "images/Routing/Other/black.png",
         "Buttons": {},
         "OnEnter": [
+            ["StopMusic", ""],
             ["Sleep", "1000"],
             ["PlayVideo", "0,0,1080,1620", "videos/intro.mp4"],
             ["Route", "Forum1"]
@@ -11,6 +12,7 @@
 
     "Forum1": {
         "Tags": ["START"],
+
         "Image": "images/Routing/Forum/Forum_1.jpg",
         "Buttons": {
             "top": {
@@ -23,7 +25,8 @@
                 "Image": "bottom",
                 "Actions": [["Route", "GangR1.1"]]
             }
-        }
+        },
+        "OnEnter": [["PlayMusic", "audio/music/gameplay_a.wav"]]
     },
 
     "Forum2": {

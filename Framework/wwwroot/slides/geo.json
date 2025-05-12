@@ -1,32 +1,28 @@
 {
     "GeoEntrance": {
-        
         "Image": "images/Routing/Geographie/Geography1.png",
         "Buttons": {
-            
             "Left": {
                 "Type": "preset",
                 "Image": "left",
-                "Actions": [["Route", "Geo3"]]}
-                ,
-                "right": {
+                "Actions": [["Route", "Geo3"]]
+            },
+            "right": {
                 "Type": "preset",
                 "Image": "right",
                 "Actions": [["Route", "Geo7"]]
-                
             },
             "down": {
                 "Type": "preset",
                 "Image": "bottom",
                 "Actions": [["Route", "H1-6-3"]]
-           }
+            }
         }
     },
- 
+
     "Geo2": {
         "Image": "images/Routing/Geographie/Geography2.png",
         "Buttons": {
-                     
             "down": {
                 "Type": "preset",
                 "Image": "bottom",
@@ -41,9 +37,10 @@
                 "Type": "preset",
                 "Image": "right",
                 "Actions": [["Route", "Geo7"]]
+            }
         }
-    }},
- 
+    },
+
     "Geo3": {
         "Image": "images/Routing/Geographie/Geography3.png",
         "Buttons": {
@@ -51,21 +48,20 @@
                 "Type": "preset",
                 "Image": "left",
                 "Actions": [["Route", "Geo4"]]
-            },"down": {
+            },
+            "down": {
                 "Type": "preset",
                 "Image": "bottom",
                 "Actions": [["Route", "GeoEntrance"]]
-            },"right": {
+            },
+            "right": {
                 "Type": "preset",
                 "Image": "right",
                 "Actions": [["Route", "Geo2"]]
             }
-           
-           
-            }
-        },
- 
- 
+        }
+    },
+
     "Geo4": {
         "Image": "images/Routing/Geographie/GeographyBooks.png",
         "Buttons": {
@@ -74,14 +70,12 @@
                 "Image": "bottom",
                 "Actions": [["Route", "Geo3"]]
             }
-           
         }
     },
- 
+
     "Geo5": {
         "Image": "images/Routing/Geographie/GeographyMiniGameArea_1.png",
         "Buttons": {
-           
             "top": {
                 "Type": "preset",
                 "Image": "top",
@@ -99,7 +93,7 @@
             }
         }
     },
- 
+
     "Geo6": {
         "Image": "images/Routing/Geographie/GeographyMiniGameArea_2.png",
         "Buttons": {
@@ -110,12 +104,16 @@
             },
             "Paper": {
                 "Type": "polygon",
+                "Visible": true,
                 "Points": "1193,1020,1045,449,647,454,589,1047",
-                "Actions": [["Route", "Geography"]]
-           
+                "Actions": [
+                    ["PlayMusic", "audio/geo.mp3"],
+                    ["Route", "Geography"]
+                ]
             }
-        }},
-   
+        }
+    },
+
     "Geo6-1": {
         "Image": "images/Routing/Geographie/Answer.jpg",
         "Buttons": {
@@ -124,8 +122,13 @@
                 "Image": "bottom",
                 "Actions": [["Route", "Geo6"]]
             }
-        }},
- 
+        },
+        "OnEnter": [
+            ["SetGameState", "Geo6.Paper", "false"],
+            ["PlayMusic", "audio/music/gameplay_a.wav"]
+        ]
+    },
+
     "Geo7": {
         "Image": "images/Routing/Geographie/Geography_Exit_1.png",
         "Buttons": {
@@ -141,7 +144,7 @@
             }
         }
     },
- 
+
     "Geo8": {
         "Image": "images/Routing/Geographie/Geography_Exit_2.png",
         "Buttons": {
@@ -157,7 +160,7 @@
             }
         }
     },
- 
+
     "Geo9": {
         "Image": "images/Routing/Geographie/Geography_e.png",
         "Buttons": {
@@ -175,9 +178,10 @@
                 "Type": "preset",
                 "Image": "bottom",
                 "Actions": [["Route", "Geo3"]]
-        }}
+            }
+        }
     },
- 
+
     "Geo10": {
         "Image": "images/Routing/Geographie/Geography_n.png",
         "Buttons": {
@@ -193,11 +197,11 @@
             }
         }
     },
- 
+
     "Geo11": {
         "Image": "images/Routing/Geographie/Geography_n_e.png",
         "Buttons": {
-           "right": {
+            "right": {
                 "Type": "preset",
                 "Image": "right",
                 "Actions": [["Route", "Geo9"]]
@@ -209,7 +213,7 @@
             }
         }
     },
-   
+
     "Geo12": {
         "Image": "images/Routing/Geographie/Geography_n_w.png",
         "Buttons": {
@@ -225,11 +229,11 @@
             }
         }
     },
- 
+
     "Geo13": {
         "Image": "images/Routing/Geographie/Geography_s_e.png",
         "Buttons": {
-           "right": {
+            "right": {
                 "Type": "preset",
                 "Image": "right",
                 "Actions": [["Route", "Geo5"]]
@@ -241,11 +245,11 @@
             }
         }
     },
- 
+
     "Geo14": {
         "Image": "images/Routing/Geographie/Geography_s_w.png",
         "Buttons": {
-           "right": {
+            "right": {
                 "Type": "preset",
                 "Image": "right",
                 "Actions": [["Route", "Geo15"]]
@@ -255,10 +259,9 @@
                 "Image": "left",
                 "Actions": [["Route", "Geo5"]]
             }
-            }
+        }
     },
-   
- 
+
     "Geo15": {
         "Image": "images/Routing/Geographie/Geography_w.png",
         "Buttons": {
@@ -271,24 +274,18 @@
                 "Type": "preset",
                 "Image": "left",
                 "Actions": [["Route", "Geo14"]]
-            } ,"top": {
+            },
+            "top": {
                 "Type": "preset",
                 "Image": "top",
                 "Actions": [["Route", "Geo4"]]
             }
         }
     },
- 
-   
- 
-"Geography": {
+
+    "Geography": {
         "Type": "Minigame",
         "FallbackSlide": "Geo6",
-        "MinigameDefClassName":  "Framework.Minigames.MinigameDefClasses.Geography"
+        "MinigameDefClassName": "Framework.Minigames.MinigameDefClasses.Geography"
     }
-    }
-    
- 
-   
-   
- 
+}
