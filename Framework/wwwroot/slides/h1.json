@@ -98,10 +98,30 @@
                 "Image": "right",
                 "Actions": [["Route", "H1-1"]]
             },
+            "left": {
+                "Type": "preset",
+                "Image": "left",
+                "Actions": [["Route", "H1-2-1"]]
+            },
             "top": {
                 "Type": "preset",
                 "Image": "top",
                 "Actions": [["Route", "H1-3"]]
+            }
+        }
+    },
+    "H1-2-1": {
+        "Image": "images/Routing/H1/0-1-1.jpg",
+        "Buttons": {
+            "right": {
+                "Type": "preset",
+                "Image": "right",
+                "Actions": [["Route", "H1-2"]]
+            },
+            "top": {
+                "Type": "preset",
+                "Image": "top",
+                "Actions": [["Route", "Hall3"]]
             }
         }
     },
@@ -117,6 +137,41 @@
                 "Type": "preset",
                 "Image": "top",
                 "Actions": [["Route", "H1-4"]]
+            },
+            "left": {
+                "Type": "preset",
+                "Image": "left",
+                "Actions": [["Route", "H1-3-1"]]
+            },
+            "right": {
+                "Type": "preset",
+                "Image": "right",
+                "Actions": [["Route", "H1-3-1"]]
+            }
+        }
+    },
+    "H1-3-1": {
+        "Image": "images/Routing/H1/0-2-1.jpg",
+        "Buttons": {
+            "bottom": {
+                "Type": "preset",
+                "Image": "bottom",
+                "Actions": [["Route", "H1-4-1"]]
+            },
+            "top": {
+                "Type": "preset",
+                "Image": "top",
+                "Actions": [["Route", "H1-2-1"]]
+            },
+            "left": {
+                "Type": "preset",
+                "Image": "left",
+                "Actions": [["Route", "H1-3"]]
+            },
+            "right": {
+                "Type": "preset",
+                "Image": "right",
+                "Actions": [["Route", "H1-3"]]
             }
         }
     },
@@ -132,6 +187,41 @@
                 "Type": "preset",
                 "Image": "top",
                 "Actions": [["Route", "H1-5"]]
+            },
+            "left": {
+                "Type": "preset",
+                "Image": "left",
+                "Actions": [["Route", "H1-4-1"]]
+            },
+            "right": {
+                "Type": "preset",
+                "Image": "right",
+                "Actions": [["Route", "H1-4-1"]]
+            }
+        }
+    },
+    "H1-4-1": {
+        "Image": "images/Routing/H1/0-3-1.jpg",
+        "Buttons": {
+            "bottom": {
+                "Type": "preset",
+                "Image": "bottom",
+                "Actions": [["Route", "H1-5-1"]]
+            },
+            "top": {
+                "Type": "preset",
+                "Image": "top",
+                "Actions": [["Route", "H1-3-1"]]
+            },
+            "left": {
+                "Type": "preset",
+                "Image": "left",
+                "Actions": [["Route", "H1-4"]]
+            },
+            "right": {
+                "Type": "preset",
+                "Image": "right",
+                "Actions": [["Route", "H1-4"]]
             }
         }
     },
@@ -147,6 +237,41 @@
                 "Type": "preset",
                 "Image": "top",
                 "Actions": [["Route", "H1-6"]]
+            },
+            "left": {
+                "Type": "preset",
+                "Image": "left",
+                "Actions": [["Route", "H1-5-1"]]
+            },
+            "right": {
+                "Type": "preset",
+                "Image": "right",
+                "Actions": [["Route", "H1-5-1"]]
+            }
+        }
+    },
+    "H1-5-1": {
+        "Image": "images/Routing/H1/0-4-1.jpg",
+        "Buttons": {
+            "bottom": {
+                "Type": "preset",
+                "Image": "bottom",
+                "Actions": [["Route", "H1-6-1-2"]]
+            },
+            "top": {
+                "Type": "preset",
+                "Image": "top",
+                "Actions": [["Route", "H1-4-1"]]
+            },
+            "left": {
+                "Type": "preset",
+                "Image": "left",
+                "Actions": [["Route", "H1-5"]]
+            },
+            "right": {
+                "Type": "preset",
+                "Image": "right",
+                "Actions": [["Route", "H1-5"]]
             }
         }
     },
@@ -188,6 +313,36 @@
                 "Type": "preset",
                 "Image": "left",
                 "Actions": [["Route", "H1-6-1-1"]]
+            },
+            "right": {
+                "Type": "preset",
+                "Image": "right",
+                "Actions": [["Route", "H1-6-1-2"]]
+            }
+        }
+    },
+    "H1-6-1-2": {
+        "Image": "images/Routing/H1/0-9-1.jpg",
+        "Buttons": {
+            "top": {
+                "Type": "preset",
+                "Image": "top",
+                "Actions": [["Route", "H1-5-1"]]
+            },
+            "bottom": {
+                "Type": "preset",
+                "Image": "bottom",
+                "Actions": [["Route", "H1-6-2-1"]]
+            },
+            "left": {
+                "Type": "preset",
+                "Image": "left",
+                "Actions": [["Route", "H1-6-1"]]
+            },
+            "right": {
+                "Type": "preset",
+                "Image": "right",
+                "Actions": [["Route", "H1-6-1-1"]]
             }
         }
     },
@@ -198,6 +353,11 @@
                 "Type": "preset",
                 "Image": "right",
                 "Actions": [["Route", "H1-6-1"]]
+            },
+            "left": {
+                "Type": "preset",
+                "Image": "left",
+                "Actions": [["Route", "H1-6-1-2"]]
             },
             "Keys": {
                 "Type": "image",
@@ -230,6 +390,41 @@
                 "Type": "preset",
                 "Image": "bottom",
                 "Actions": [["Route", "H1-6-1"]]
+            },
+            "left": {
+                "Type": "preset",
+                "Image": "left",
+                "Actions": [["Route", "H1-6-2-1"]]
+            },
+            "right": {
+                "Type": "preset",
+                "Image": "right",
+                "Actions": [["Route", "H1-6-2-1"]]
+            }
+        }
+    },
+    "H1-6-2-1": {
+        "Image": "images/Routing/H1/0-10-1.jpg",
+        "Buttons": {
+            "top": {
+                "Type": "preset",
+                "Image": "top",
+                "Actions": [["Route", "H1-6-1-2"]]
+            },
+            "bottom": {
+                "Type": "preset",
+                "Image": "bottom",
+                "Actions": [["Route", "Geo8"]]
+            },
+            "left": {
+                "Type": "preset",
+                "Image": "left",
+                "Actions": [["Route", "H1-6-2"]]
+            },
+            "right": {
+                "Type": "preset",
+                "Image": "right",
+                "Actions": [["Route", "H1-6-2"]]
             }
         }
     },
@@ -251,9 +446,9 @@
     "H1-7": {
         "Image": "images/Routing/H1/0-6.jpg",
         "Buttons": {
-            "bottom": {
+            "right": {
                 "Type": "preset",
-                "Image": "bottom",
+                "Image": "right",
                 "Actions": [["Route", "H1-6"]]
             },
             "top": {
@@ -299,7 +494,7 @@
             "top": {
                 "Type": "preset",
                 "Image": "top",
-                "Actions": [["Route", "H1-7"]]
+                "Actions": [["Route", "H1-5-1"]]
             }
         }
     },

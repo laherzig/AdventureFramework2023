@@ -170,8 +170,7 @@
                 "Actions": [
                     ["Route", "FrogGame"],
                     ["SetGameState", "Biologie21.frog", "false"],
-                    ["SetGameState", "Biologie21.frogPolygon", "false"],
-                    ["AddItem", "frog"]
+                    ["SetGameState", "Biologie21.frogPolygon", "false"]
                 ],
                 "Visible": true
             }
@@ -185,7 +184,8 @@
             ["Sleep", "1000"],
             ["PlayVideo", "0,0,1080,1620", "videos/Frosch.mp4"],
             ["PlayMusic", "audio/music/gameplay_a.wav"],
-            ["Route", "Biologie32"]
+            ["Route", "Biologie32"],
+            ["AddItem", "frog"]
         ]
     },
     "Biologie22": {

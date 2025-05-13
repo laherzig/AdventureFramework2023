@@ -510,7 +510,8 @@ public class LockpickingMinigame : MinigameDefBase
 								{
 									BackgroundImage = "minigame_assets/LockPick_assets/images/GeoeffneterLocker.png";
 									Update();
-									Finish(null, "BioVid");
+									Finish(null,"BioVid");
+                    
 								}
 								else
 								{
