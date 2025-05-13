@@ -93,6 +93,11 @@
     "H1-2": {
         "Image": "images/Routing/H1/0-1.jpg",
         "Buttons": {
+            "right": {
+                "Type": "preset",
+                "Image": "right",
+                "Actions": [["Route", "H1-1"]]
+            },
             "top": {
                 "Type": "preset",
                 "Image": "top",

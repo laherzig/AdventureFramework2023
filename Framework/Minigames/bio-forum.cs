@@ -41,8 +41,8 @@ public class BiologyDialogue : MinigameDefBase
 
 		NpcHitBox = new()
 		{
-			X = 115,
-			Y = 400,
+			X = 313,
+			Y = 927,
 			Width = 500,
 			Height = 800,
 			Fill = "transparent",

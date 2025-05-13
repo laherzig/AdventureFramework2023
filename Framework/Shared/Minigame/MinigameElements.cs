@@ -710,7 +710,7 @@ public class Dialogue
 			ImagePath = "UI_Images/backImg.png",
 			ZIndex = 6,
 			X = 100,
-			Y = 1000,
+			Y = 950,
 			Width = 100,
 			Height = 100,
 		};
@@ -725,7 +725,7 @@ public class Dialogue
 			ImagePath = "UI_Images/arrows/right.png",
 			ZIndex = 6,
 			X = 1400,
-			Y = 1000,
+			Y = 950,
 			Width = 100,
 			Height = 100,
 		};

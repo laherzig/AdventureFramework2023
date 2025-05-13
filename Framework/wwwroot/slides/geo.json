@@ -132,15 +132,15 @@
     "Geo7": {
         "Image": "images/Routing/Geographie/Geography_Exit_1.png",
         "Buttons": {
-            "top": {
-                "Type": "preset",
-                "Image": "top",
+            "poly": {
+                "Type": "polygon",
+                "Points": "983,4,1617,6,1613,1069,979,1071",
                 "Actions": [["Route", "Geo8"]]
             },
             "left": {
                 "Type": "preset",
                 "Image": "left",
-                "Actions": [["Route", "Geo2"]]
+                "Actions": [["Route", "GeoEntrance"]]
             }
         }
     },
