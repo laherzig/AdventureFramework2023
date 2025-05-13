@@ -227,6 +227,7 @@ public abstract class MinigameDefBase
 
 	// Method that is run right after the constructor
 	public virtual void AfterInit() { }
+	public virtual void BeforeExit() { }
 
 	// Functions that will subscribe to the events of the Keyboard and Mouse services
 	// will be added automatically and removed in the Exit() method
@@ -264,6 +265,8 @@ public abstract class MinigameDefBase
 
 	public void Finish(List<List<string>>? actions, string? route = null)
 	{
+		// yay new feature that was added for no reason at all
+		BeforeExit();
 		// really important
 		Exit();
 

@@ -1002,3 +1002,26 @@ public class DimitriDialogue : MinigameDefBase
 		}
 	}
 }
+
+public class LaurinDialogue : DialogueBase
+{
+	public override string BackgroundImage { get; set; } = "images/Routing/BG/BG_1_1.png";
+	public override string DefaultRoute { get; set; } = "HM305";
+
+	public List<List<string>> msgs = [
+		["Du", "Hallo"],
+		["Rüpel", "Hallo"],
+		["Du", "Wie gehts?"],
+		["Rüpel", "Gut, und dir?"],
+		["Du", "Gut, danke."],
+		["Chef", "Hallo"],
+	];
+
+	public LaurinDialogue()
+	{
+		ActiveMessages = msgs;
+		BackButton.Visible = true;
+		RunDialogue();
+	}
+
+}
