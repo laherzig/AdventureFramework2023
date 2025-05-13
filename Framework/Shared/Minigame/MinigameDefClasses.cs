@@ -1015,6 +1015,8 @@ public class LaurinDialogue : DialogueBase
 		["Rüpel", "Gut, und dir?"],
 		["Du", "Gut, danke."],
 		["Chef", "Hallo"],
+		["Du", "lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mollis mollis mi ut ultricies.."],
+
 	];
 
 	public LaurinDialogue()
