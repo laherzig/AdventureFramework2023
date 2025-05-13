@@ -65,9 +65,14 @@
     "Geo4": {
         "Image": "images/Routing/Geographie/GeographyBooks.png",
         "Buttons": {
-            "down": {
+            "left": {
                 "Type": "preset",
-                "Image": "bottom",
+                "Image": "left",
+                "Actions": [["Route", "Geo7"]]
+            },
+            "right": {
+                "Type": "preset",
+                "Image": "right",
                 "Actions": [["Route", "Geo3"]]
             }
         }
@@ -132,15 +137,15 @@
     "Geo7": {
         "Image": "images/Routing/Geographie/Geography_Exit_1.png",
         "Buttons": {
-            "top": {
-                "Type": "preset",
-                "Image": "top",
+            "poly": {
+                "Type": "polygon",
+                "Points": "983,4,1617,6,1613,1069,979,1071",
                 "Actions": [["Route", "Geo8"]]
             },
             "left": {
                 "Type": "preset",
                 "Image": "left",
-                "Actions": [["Route", "Geo2"]]
+                "Actions": [["Route", "GeoEntrance"]]
             }
         }
     },
@@ -148,10 +153,10 @@
     "Geo8": {
         "Image": "images/Routing/Geographie/Geography_Exit_2.png",
         "Buttons": {
-            "": {
+            "top": {
                 "Type": "preset",
                 "Image": "top",
-                "Actions": [["Route", "H1-6-3"]]
+                "Actions": [["Route", "H1-6-2-1"]]
             },
             "down": {
                 "Type": "preset",
@@ -177,7 +182,7 @@
             "down": {
                 "Type": "preset",
                 "Image": "bottom",
-                "Actions": [["Route", "Geo3"]]
+                "Actions": [["Route", "Geo2"]]
             }
         }
     },
