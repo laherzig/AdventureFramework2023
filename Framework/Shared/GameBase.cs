@@ -57,6 +57,26 @@ public partial class GameBase : ComponentBase
 
 	protected void ChangeSlide(string slideId)
 	{
+		/* 
+		* This is extremely hacky, but it is very important
+		* For some godforsaken reason, you cannot route to a minigame if you finish in one
+		* Because a more normal "re-routing" approach like
+		* (`EvaluateActions([["Route", "__relay__"], ["Route", slideId]])`) 
+		* does not seem to work, you set the OnEnter of the __relay__ slide to route to the new slide,
+		* then you route there.
+		* __relay__ doesn't exist in the json, it gets created by the SlideService
+		* Doing it like this makes it however dangerous to route to __relay__ outside this special case
+		* so don't do it.
+		*/
+		if (
+			SlideService.GetSlide(slideId).Type == "Minigame" &&
+			SlideService.GetSlide(Parameters.SlideId).Type == "Minigame"
+		)
+		{
+			SlideService.Slides["__relay__"].OnEnter = [["Route", slideId]];
+			slideId = "__relay__";
+		}
+
 		// for debug, throw an exception if the slide does not exist
 		if (Debug)
 		{

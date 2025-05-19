@@ -109,6 +109,13 @@ public class SlideService(JsonUtility jsonUtility, GameState gameState, SlidesVe
 			slidesVerifier.VerifySlides(Slides);
 		}
 		gameState.CurrentSlide = GetStartSlideId();
+		//* Make relay slide for minigame to minigame routing
+		//* This is a hacky solution, but it works
+		Slides["__relay__"] = new JsonSlide()
+		{
+			Image = "",
+			Buttons = [],
+		};
 	}
 
 	public JsonSlide GetSlide(string slideId)
@@ -120,7 +127,8 @@ public class SlideService(JsonUtility jsonUtility, GameState gameState, SlidesVe
 		catch (KeyNotFoundException)
 		{
 			throw new KeyNotFoundException($"No Slide with Id `{slideId}` found");
-		};
+		}
+
 	}
 
 	public string GetSlideId(JsonSlide slide)

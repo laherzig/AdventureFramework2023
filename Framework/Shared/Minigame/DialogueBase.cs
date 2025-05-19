@@ -19,16 +19,24 @@ public class DialogueBase : MinigameDefBase
 
 	private int currentMessage = 0;
 
+	public virtual string? ForwardRoute { get; set; } = null;
 
+	public virtual Action? CustomFinish { get; set; } = null;
 
 	public void RunDialogue()
 	{
-		Console.WriteLine($"Current message: {currentMessage}");
-		Console.WriteLine($"Total messages: {ActiveMessages.Count}");
 		if (currentMessage >= ActiveMessages.Count)
 		{
-			Finish(null, DefaultRoute);
+			if (CustomFinish is null)
+			{
+				Finish(null, ForwardRoute ?? DefaultRoute);
+			}
+			else
+			{
+				CustomFinish();
+			}
 			return;
+
 		}
 		List<string> message = ActiveMessages[currentMessage];
 		currentMessage++;
