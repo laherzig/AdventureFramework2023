@@ -5,5 +5,8 @@
     "Door": true,
     "False": false,
 
-    "Armdrugge.Tried": false
+    "Armdrugge.Tried": false,
+    "BG-Forum.Visited": false,
+    "Bio-Forum.Visited": false,
+    "Bio-Game.Complete": false
 }

@@ -6,7 +6,8 @@ public class ArmDrugge : MinigameDefBase
     public override string DefaultRoute { get; set; } = "Hall2";
     // </edit by laurin>
 
-    public override string BackgroundImage { get; set; } = "minigame_assets/Armdrücken_assets/Arm_0_F.png";
+    // public override string BackgroundImage { get; set; } = "minigame_assets/Armdrücken_assets/Arm_0_F.png";
+    public override string BackgroundImage { get; set; } = "images/Routing/Haupthall/Arm_0.png";
     [Element]
     public Rectangle ProgressBar { get; set; }
     int clickcount = 400; // Wie oft man auf den Kreis gedrückt hat (für die Farben zustädnig)
@@ -36,31 +37,29 @@ public class ArmDrugge : MinigameDefBase
         BackButton.Visible = true;
         // </edit by laurin>
 
-        AddElement(
-                     new Rectangle()
-                     {
-                         // Progressbar links (Spieler)
-                         Id = "Frog4",
-                         X = 80,
-                         Y = 100,
-                         Width = 160,
-                         Height = 160,
-                         Fill = "transparent",
-                         Stroke = "green",
-                         StrokeWidth = 1,
-                         OnClick = (args) =>
+        // AddElement(
+        //              new Rectangle()
+        //              {
+        //                  // Progressbar links (Spieler)
+        //                  Id = "Frog4",
+        //                  X = 80,
+        //                  Y = 100,
+        //                  Width = 160,
+        //                  Height = 160,
+        //                  Fill = "transparent",
+        //                  Stroke = "green",
+        //                  StrokeWidth = 1,
+        //                  OnClick = (args) =>
 
-                         {  //ADITEM NOCH MACHEN FRAMEWORK UPDATEN
-                             gamestart();
-                             Elements.KillId("StartCircle");
-                             Elements.KillId("Frog4");
-                             Update();
-                             frog1 = 3;
-
-                         }
-
-                     }
-                 );
+        //                  {  //ADITEM NOCH MACHEN FRAMEWORK UPDATEN
+        //                      gamestart();
+        //                      Elements.KillId("StartCircle");
+        //                      Elements.KillId("Frog4");
+        //                      Update();
+        //                      frog1 = 3;
+        //                  }
+        //              }
+        //          );
 
         AddElement(
               new Circle()
@@ -77,7 +76,11 @@ public class ArmDrugge : MinigameDefBase
                   {
                       gamestart();
                       Elements.KillId("StartCircle");
-                      Elements.KillId("Frog4");
+                    //   Elements.KillId("Frog4");
+					  if (GameState.CheckForItem("frog"))
+					  {
+						  frog1 = 3;
+					  }
                       Update();
 
                   },

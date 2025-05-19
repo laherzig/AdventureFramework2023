@@ -61,7 +61,7 @@
 
     "redbull": {
         "name": "RedBull",
-        "description": "",
+        "description": "Energydrink mit mythischer Heilkraft",
         "image": "InventoryImages/redbull.png"
     }
 }

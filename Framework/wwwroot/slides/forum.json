@@ -6,6 +6,7 @@
             ["StopMusic", ""],
             ["Sleep", "1000"],
             ["PlayVideo", "0,0,1080,1620", "videos/intro.mp4"],
+            ["PlayMusic", "audio/music/gameplay_a.wav"],
             ["Route", "Forum1"]
         ]
     },
@@ -24,8 +25,7 @@
                 "Image": "bottom",
                 "Actions": [["Route", "GangR1.1"]]
             }
-        },
-        "OnEnter": [["PlayMusic", "audio/music/gameplay_a.wav"]]
+        }
     },
 
     "Forum2": {
@@ -44,7 +44,8 @@
             "talk": {
                 "Type": "polygon",
                 "Points": "252,933,248,828,272,831,379,841,438,805,464,755,481,720,508,691,530,661,550,595,565,579,574,512,640,482,677,498,711,546,707,579,711,618,736,637,777,685,813,697,894,714,996,691,1020,595,983,575,986,475,1030,462,1101,459,1129,512,1151,582,1172,679,1186,761,1199,843,1199,926,1224,971,1186,1050,1175,1066,965,1061,562,1061,376,1061,265,1064",
-                "Actions": [["Route", "Talk3"]]
+                "Actions": [["Route", "Talk3"]],
+                "Visible": true
             }
         }
     },
@@ -126,14 +127,8 @@
     },
 
     "Talk-2": {
-        "Image": "images/Routing/Forum/Forum_3.jpg",
-        "Buttons": {
-            "bottom": {
-                "Type": "preset",
-                "Image": "bottom",
-                "Actions": [["Route", "Forum3"]]
-            }
-        }
+        "Type": "Minigame",
+        "MinigameDefClassName": "Framework.Minigames.MinigameDefClasses.BgDialogue"
     },
 
     "Talk-3": {
@@ -161,6 +156,6 @@
     "Talk3": {
         "Type": "Minigame",
         "FallbackSlide": "Talk-3",
-        "MinigameDefClassName": "Framework.Minigames.MinigameDefClasses.BiologyDialogue"
+        "MinigameDefClassName": "Framework.Minigames.MinigameDefClasses.BioDialogue"
     }
 }
