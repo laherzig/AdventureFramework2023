@@ -224,7 +224,7 @@ public class ArmDrugge : MinigameDefBase
             Update();
             BackgroundImage = "minigame_assets/Armdrücken_assets/Arm_3.png";
             gameover = true;
-            Finish(null, "Hall2");   
+            Finish(null, "ArmdruggeDialogueLoose");
         }
         else if (score == 2)
         {
@@ -233,7 +233,7 @@ public class ArmDrugge : MinigameDefBase
             redcol = "transparent";
             Update();
             gameover = true;
-            Finish(null, "Hall2-1");   
+            Finish(null, "ArmdruggeDialogueWin");   
         }
 
         Update();

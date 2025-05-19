@@ -277,7 +277,7 @@
             "armdruggeMinigame": {
                 "Type": "polygon",
                 "Points": "780,475,692,626,723,835,1032,859,1069,609",
-                "Actions": [["Route", "ArmdruggeMinigame"]]
+                "Actions": [["Route", "ArmdruggeDialogue"]]
             },
             "back": {
                 "Type": "preset",
@@ -304,9 +304,5 @@
     "HauptHalle18": {
         "Image": "images/Routing/Haupthall/ToMPC_left.png",
         "Buttons": {}
-    },
-    "ArmdruggeMinigame": {
-        "Type": "Minigame",
-        "MinigameDefClassName": "Framework.Minigames.MinigameDefClasses.ArmDrugge"
     }
 }

@@ -3,5 +3,7 @@
     "LeButton": false,
     "CodeTerminal": true,
     "Door": true,
-    "False": false
+    "False": false,
+
+    "Armdrugge.Tried": false
 }
