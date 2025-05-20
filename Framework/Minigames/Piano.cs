@@ -42,7 +42,9 @@ public class PianoMinigame : MinigameDefBase
 			Y = 25,
 			Width = 100,
 			Height = 100,
-			OnClick = (args) => { Finish(null, "MusicRoom"); }
+			OnClick = (args) => { 
+
+                Finish(null, "Music-2"); }
 		};
 		AddElement(Quit);
 
@@ -75,7 +77,7 @@ public class PianoMinigame : MinigameDefBase
 		foreach (string note in rounds[level - 1])
 		{
 			PlaySound(note);
-			await Task.Delay(1000);
+			await Task.Delay(2000);
 		}
 		Update();
 	}
@@ -109,7 +111,8 @@ public class PianoMinigame : MinigameDefBase
 				Update();
 				if (level >= rounds.Length)
 				{
-					Finish(null, "MusicRoom");
+		            GameState.SetState("Music-Red.Complete", true);
+					Finish(null, "Music-Red");
 				}
 				else
 				{

@@ -90,28 +90,6 @@
                 "Type": "preset",
                 "Image": "right",
                 "Actions": [["Route", "Biologie7"]]
-            },
-            "Redbull": {
-                "Type": "image",
-                "Image": "images/red-bull.png",
-                "Points": "1400,700,80,80",
-                "Actions": [],
-                "Visible": true
-            },
-            "BullPolygon": {
-                "Type": "polygon",
-                "Points": "1424,715,1474,715,1474,784,1420,785",
-                "Actions": [
-                    ["SetGameState", "Biologie6.Redbull", "false"],
-		            ["ChangeRedBull","1"],
-                    [
-                        "SetGameState",
-                        "Biologie6.BullPolygon",
-                        "false"
-                    ],
-                    ["AddItem", "redbull"]
-                ],
-                "Visible": true
             }
         }
     },
