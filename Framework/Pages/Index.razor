@@ -6,6 +6,7 @@
 @using Framework.Mouse
 @using Framework.Sound
 @using Framework.Video
+@using Microsoft.JSInterop
 
 @inject SlideService SlideService
 @inject GameState GameState
@@ -13,6 +14,7 @@
 @inject MouseService MouseService
 @inject SoundService SoundService
 @inject VideoService VideoService
+@inject IJSRuntime JSRuntime
 
 @if (initTask.IsCompletedSuccessfully)
 {
@@ -51,7 +53,7 @@ else
 }
 
 @code {
-    public double Volume { get; set; } = 0;
+    public double Volume => GameState.Volume;
     private TaskCompletionSource<bool> _tcs = new();
     private Task initTask => _tcs.Task;
 
@@ -76,7 +78,8 @@ else
 
     private async Task UpdateVolume(ChangeEventArgs e)
     {
-        Volume = Convert.ToDouble(e.Value); 
+        @* Volume = Convert.ToDouble(e.Value);  *@
+        GameState.Volume = Convert.ToDouble(e.Value); 
 
         if (!userinteraction)
         { 
@@ -84,7 +87,7 @@ else
             await SoundService.PlayMusic("/audio/menu.wav");
         }
 
-        Volume = Convert.ToDouble(e.Value); 
+        @* Volume = Convert.ToDouble(e.Value);  *@
         await SoundService.UpdateVolume(Volume);
     }
 
