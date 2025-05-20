@@ -42,7 +42,9 @@ public class PianoMinigame : MinigameDefBase
 			Y = 25,
 			Width = 100,
 			Height = 100,
-			OnClick = (args) => { Finish(null, "Music-2"); }
+			OnClick = (args) => { 
+
+                Finish(null, "Music-2"); }
 		};
 		AddElement(Quit);
 
@@ -109,6 +111,7 @@ public class PianoMinigame : MinigameDefBase
 				Update();
 				if (level >= rounds.Length)
 				{
+		            GameState.SetState("Music-Red.Complete", true);
 					Finish(null, "Music-Red");
 				}
 				else
