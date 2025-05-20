@@ -1,0 +1,47 @@
+@using Framework.State
+@using Framework.Sound
+@using Microsoft.JSInterop
+
+@inject IJSRuntime JSRuntime
+@inject GameState GameState
+@inject SoundService SoundService
+
+@namespace Framework.PauseMenu
+
+<div id="options">
+    <label class="text" for="volume">Volume: @Volume%</label>
+    <input type="range" id="volume" name="volume" min="0" max="100" value="@GameState.Volume" @onchange="UpdateVolume" class="volume-range"/>
+    <button id="copy-button" class="indy-button" @onmouseleave="ChangeCopyButtonText" @onclick="CopyText">@CopyButtonText</button>
+</div>
+
+@code {
+    private double Volume => GameState.Volume;
+
+    private string CopyButtonText = "Copy Save String";
+
+    private async Task UpdateVolume(ChangeEventArgs e)
+    {
+        GameState.Volume = Convert.ToDouble(e.Value); 
+        await SoundService.UpdateVolume(Volume);
+    }
+
+    private async Task CopyText()
+    {
+        var saveString = GameState.GetSaveString();
+        await JSRuntime.InvokeVoidAsync("navigator.clipboard.writeText", saveString);
+        CopyButtonText = "Copied!";
+    }
+
+    private void ChangeCopyButtonText()
+    {
+        if (CopyButtonText == "Copied!")
+        {
+            CopyButtonText = "Copy Save String";
+        }
+    }
+}
+
+@* #line default
+#line hidden
+#nullable disable
+#nullable restore *@

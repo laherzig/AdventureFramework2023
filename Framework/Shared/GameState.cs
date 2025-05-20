@@ -64,6 +64,8 @@ public class GameState(JsonUtility jsonUtility, ItemService items, IToastService
 	private readonly JsonUtility JsonUtility = jsonUtility;
 	private readonly ItemService Items = items;
 
+	// volume. Not saved but in game state for easy sync between different components
+	public double Volume { get; set; } = 0;
 
 	// initialize with empty data
 	private GameStateData Data = new();
