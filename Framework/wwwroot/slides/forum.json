@@ -1,5 +1,6 @@
 {
     "Start": {
+        "Tags": ["START"],
         "Image": "images/Routing/Other/black.png",
         "Buttons": {},
         "OnEnter": [
@@ -12,7 +13,6 @@
     },
 
     "Forum1": {
-        "Tags": ["START"],
         "Image": "images/Routing/Forum/Forum_1.jpg",
         "Buttons": {
             "top": {

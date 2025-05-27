@@ -98,8 +98,7 @@
                 "Actions": [["Route", "ChemieKeller_Exit"]],
                 "Visible": false
             }
-        },
-        "OnEnter": [["AddItem", "nitro_pipette"]]
+        }
     },
     "ChemieKeller_s_w": {
         "Image": "images/Routing/ChemieKeller/ChemieKeller_s_w_note.png",

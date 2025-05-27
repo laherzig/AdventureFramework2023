@@ -120,7 +120,7 @@
     },
 
     "Geo6-1": {
-        "Image": "images/Routing/Geographie/Answer.jpg",
+        "Image": "images/Routing/Geographie/GeographyMiniGameArea_2.jpg",
         "Buttons": {
             "down": {
                 "Type": "preset",

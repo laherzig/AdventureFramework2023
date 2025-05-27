@@ -25,7 +25,8 @@ public class SlideBase : ComponentBase
 
 	// Fill color for the polygons
 	//? what color will the polygons have (if any)
-	protected string fillColor = "rgba(255, 255, 147, 0)";
+    protected string fillColor = "rgba(255, 255, 147, 0.3)";
+	protected string buttonColor = "rgba(0, 0, 0, 0.2)";
 
 	protected override async Task OnParametersSetAsync()
 	{

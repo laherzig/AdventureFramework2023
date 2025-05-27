@@ -34,14 +34,14 @@
     "Biologie3": {
         "Image": "images/Routing/Biologie/BioRoom1.png",
         "Buttons": {
-            "left": {
+            "bottom": {
                 "Type": "preset",
-                "Image": "left",
+                "Image": "bottom",
                 "Actions": [["Route", "Biologie2"]]
             },
-            "right": {
+            "top": {
                 "Type": "preset",
-                "Image": "right",
+                "Image": "top",
                 "Actions": [["Route", "Biologie4"]]
             }
         }
@@ -50,10 +50,15 @@
     "Biologie4": {
         "Image": "images/Routing/Biologie/Bio_n.png",
         "Buttons": {
+            "bottom": {
+                "Type": "preset",
+                "Image": "bottom",
+                "Actions": [["Route", "Biologie3"]]
+            },
             "left": {
                 "Type": "preset",
                 "Image": "left",
-                "Actions": [["Route", "Biologie3"]]
+                "Actions": [["Route", "Biologie6"]]
             },
             "right": {
                 "Type": "preset",
@@ -74,7 +79,7 @@
             "right": {
                 "Type": "preset",
                 "Image": "right",
-                "Actions": [["Route", "Biologie6"]]
+                "Actions": [["Route", "Biologie8"]]
             }
         }
     },
@@ -84,12 +89,12 @@
             "left": {
                 "Type": "preset",
                 "Image": "left",
-                "Actions": [["Route", "Biologie5"]]
+                "Actions": [["Route", "Biologie9"]]
             },
             "right": {
                 "Type": "preset",
                 "Image": "right",
-                "Actions": [["Route", "Biologie7"]]
+                "Actions": [["Route", "Biologie4"]]
             }
         }
     },
@@ -99,12 +104,12 @@
             "left": {
                 "Type": "preset",
                 "Image": "left",
-                "Actions": [["Route", "Biologie6"]]
+                "Actions": [["Route", "Biologie8"]]
             },
             "right": {
                 "Type": "preset",
                 "Image": "right",
-                "Actions": [["Route", "Biologie8"]]
+                "Actions": [["Route", "Biologie9"]]
             },
             "Blackboard": {
                 "Type": "polygon",
@@ -119,12 +124,12 @@
             "left": {
                 "Type": "preset",
                 "Image": "left",
-                "Actions": [["Route", "Biologie6"]]
+                "Actions": [["Route", "Biologie8"]]
             },
             "right": {
                 "Type": "preset",
                 "Image": "right",
-                "Actions": [["Route", "Biologie8"]]
+                "Actions": [["Route", "Biologie9"]]
             },
             "Blackboard": {
                 "Type": "polygon",
@@ -140,26 +145,31 @@
             "left": {
                 "Type": "preset",
                 "Image": "left",
-                "Actions": [["Route", "Biologie7"]]
+                "Actions": [["Route", "Biologie5"]]
             },
             "right": {
                 "Type": "preset",
                 "Image": "right",
-                "Actions": [["Route", "Biologie9"]]
+                "Actions": [["Route", "Biologie7"]]
             }
         }
     },
     "Biologie9": {
         "Image": "images/Routing/Biologie/Bio_s_w.png",
         "Buttons": {
-            "left": {
-                "Type": "preset",
-                "Image": "left",
-                "Actions": [["Route", "Biologie8"]]
-            },
             "right": {
                 "Type": "preset",
                 "Image": "right",
+                "Actions": [["Route", "Biologie6"]]
+            },
+            "left": {
+                "Type": "preset",
+                "Image": "left",
+                "Actions": [["Route", "Biologie7"]]
+            },
+            "poly": {
+                "Type": "polygon",
+                "Points": "1005,41,1088,6,1196,1,1172,861,989,800",
                 "Actions": [["Route", "BiologyEntrance"]]
             }
         }

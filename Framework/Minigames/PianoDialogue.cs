@@ -6,7 +6,7 @@ public class PianoDialogue : DialogueBase
 	public override string DefaultRoute { get; set; } = "GangR2.3";
 
 	readonly List<List<string>> messages = [
-		["Du", "Hallo! Wiesst du wo mein Laptop ist?"],
+		["Du", "Hallo! Weisst du wo mein Laptop ist?"],
 		["Hans", "Nein, aber ich habe etwas viel Interessanteres..."],
 		["Du", "Ich werde die Polizei rufen."],
 		["Hans", "NEIN, du Idiot!!! "],

@@ -4,23 +4,22 @@ public class ArmdruggeDialogueStart : DialogueBase
 {
 	readonly List<List<string>> StartMessages = [
 		["Du", "Entschuldigung, wisst ihr etw-"],
-		["Rüpel", "Was denkst du, wer du bist!?!"],
+		["Chef", "Was denkst du, wer du bist!?!"],
 		["Du", "Was?"],
-		["Rüpel", "Weisst du überhaupt, mit wem du hier sprichst?"],
-		["Rüpel", "Wenn du etwas von uns willst, musst du dich zuerst beweisen"],
+		["Chef", "Weisst du überhaupt, mit wem du hier sprichst?"],
+		["Chef", "Wenn du etwas von dem Chef willst, musst du dich zuerst beweisen."],
 		["Du", "Was muss ich machen?"],
-		["Rüpel", "Du musst den Chef im Armdrücken besiegen."],
-		["Rüpel", "Aber mach dich auf was gefasst, der Chef ist dreifacher Weltmeister im Armdrücken."],
-		["Rüpel", "Mach dich bereit, der Chef hat nicht ewig Zeit."],
+		["Chef", "Du musst den Chef im Armdrücken besiegen."],
+		["Chef", "Aber mach dich auf was gefasst, der Chef ist dreifacher Weltmeister im Armdrücken."],
+		["Chef", "Mach dich bereit, der Chef hat nicht ewig Zeit."],
 		["Du", "Ich werde mein Bestes geben!"],
 		["Chef", "..."],
 	];
 
 	readonly List<List<string>> RetryMessages = [
-		["Rüpel", "Schon zurück? Das ging ja schnell!"],
+		["Chef", "Schon zurück? Das ging ja schnell!"],
 		["Du", "Ich würde es gerne erneut versuchen."],
 		["Chef", "Du hast Mumm."],
-		["Rüpel", "Zeig ihm, wo der Hammer hängt, Chef!."],
 	];
 
 	public override string DefaultRoute { get; set; } = "Hall2";
@@ -44,13 +43,13 @@ public class ArmdruggeDialogueWin : DialogueBase
 {
 	readonly List<List<string>> WinMessages = [
 		["Chef", "Was?? Wie kann das sein?"],
-		["Rüpel", "Er hat es tatsächlich geschafft!"],
+		["Chef", "Du hast es tatsächlich geschafft!"],
 		["Du", "Puh, das war schwieriger als gedacht."],
-		["Chef", "Du hast mich fair geschlagen"],
-		["Chef", "Du hast dir unseren Respekt verdient."],
-		["Du", "Ich wollte euch fraen, ob ihr meinen Laptop gesehen habt."],
+		["Chef", "Du hast den Chef fair geschlagen."],
+		["Chef", "Du hast dir den Respekt des Chefs verdient."],
+		["Du", "Ich wollte dich fragen, ob du meinen Laptop gesehen hast."],
 		["Du", "Er ist während der Zwischenpause verschwunden!."],
-		["Chef", "Hinweis"],
+		["Chef", "Der Chef hat einen fremden Mann gesehen, der in den Keller gegangen ist. Vielleicht solltest du dort nachsehen."],
 	];
 
 	public override string DefaultRoute { get; set; } = "Hall2";

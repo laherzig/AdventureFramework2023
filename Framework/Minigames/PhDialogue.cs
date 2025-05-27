@@ -6,23 +6,34 @@ public class PhDialogue : DialogueBase
 	public override string DefaultRoute { get; set; } = "Forum4";
 
 	readonly List<List<string>> messages = [
-		["Du", "Hallo! Könnt ihr mir sagen wo mein Laptop ist?"],
-		["Mauzi", "Vielleicht... wenn du uns helfen kannst :3"],
-		["Du", "Was gibts?"],
-		["Bautzi", "Wir sind richtig schlecht in Bio, kannst du uns helfen?"],
-		["Du", "ok..."],
+		["Du", "Hallo! Hast du vielleicht gesehen, was mit meinem Laptop passiert ist?"],
+		["Giovanni", "Ciao! Nicht wirklich, aber ich habe einige Informationen zu teilen..."],
+		["Giovanni", "Natürlich nicht umsonst."],
+        ["Du", "Naaaatürlich... Ok!"],
+		["Giovanni", "Wenn du mir bei meinem Projekt im Physiklabor hilfst, werde ich dir sagen, was ich weiss."],
+        ["Du", "So gut wie erledigt!"]
 	];
 	readonly List<List<string>> VictoryMessage = [
-		["Du", "Viel zu einfach"],
-		["Mauzi", "OMG danke!"],
-		["Bautzi", "Endlich kann ich meinen Eltern eine Note zeigen"],
-		["Du", "Nun raus mit der Sprache, helft mir jetzt!"],
-		["Mautzi", ""],
+		["Du", "Ein paar nervige Pieptöne und ich bin fertig!"],
+		["Giovanni", "Grazie!"],
+		["Giovanni", "Ich halte mein Versprechen. Hier ist, was ich gehört habe..."],
+		["Du", "Endlich..."],
+		["Giovanni", "Jemand hat den Schlüssel von der Kellertür auf der Skulptur neben der Tür vergessen."],
+		["Du", "Wie soll mir das helfen?"],
+		["Giovanni", "┐｜･ิω･ิ#｜┌"]
+	];
+	readonly List<List<string>> VictoryMessageAlt = [
+		["Du", "Ein paar nervige Pieptöne und ich bin fertig!"],
+		["Giovanni", "Grazie!"],
+		["Giovanni", "Ich halte mein Versprechen. Hier ist, was ich gehört habe..."],
+		["Du", "Endlich..."],
+		["Giovanni", "Jemand hat den Schlüssel von der Kellertür auf der Skulptur neben der Tür vergessen."],
+		["Du", "Ich hab ihn schon! Wie soll mir das helfen?"],
+		["Giovanni", "┐｜･ิω･ิ#｜┌"]
 	];
 	readonly List<List<string>> FailureMessage = [
-		["Du", "Noch nicht fertig, sorry"],
-		["Mauzi", "Dann flieg ich halt raus"],
-		["Bautzi", "L"],
+		["Du", "Noch nicht fertig"],
+		["Giovanni", "Mamma mia!"]
 	];
 
 	public override void AfterInit()
@@ -34,7 +45,14 @@ public class PhDialogue : DialogueBase
 		}
 		else
 		{
-			ActiveMessages = GameState.GetState("Ph-Game.Complete") ? VictoryMessage : FailureMessage;
+            if (GameState.GetState("Ph-Game.Complete"))
+            {
+                ActiveMessages = GameState.GetState("KeyTaken") ? VictoryMessageAlt : VictoryMessage;
+            }
+            else
+            {
+                ActiveMessages = FailureMessage;
+            } 
 		}
 		RunDialogue();
 	}

@@ -18,9 +18,9 @@
     "GangR1.1": {
         "Image": "images/Routing/GangR/RGang_1.1.jpg",
         "Buttons": {
-            "top": {
-                "Type": "preset",
-                "Image": "top",
+            "door":{
+                "Type": "polygon", 
+                "Points": "853,193,1185,183,1178,908,853,888",
                 "Actions": [["Route", "Forum1"]]
             },
             "left": {
@@ -495,19 +495,14 @@
                 "Image": "left",
                 "Actions": [["Route", "GangR7"]]
             },
-            "top": {
-                "Type": "preset",
-                "Image": "top",
-                "Actions": [["Route", "Hall1"]]
-            },
             "right": {
                 "Type": "preset",
                 "Image": "right",
-                "Actions": [["Route", "GangR9"]]
+                "Actions": [["Route", "Hall1"]]
             },
             "are":{
-                "Type": "polygon", 
-                "Points": "626,844,600,390,1057,356,1055,860",
+                "Type": "preset", 
+                "Image": "top",
                 "Actions": [["Route", "GangR8.1"]]
             }
         }
@@ -563,7 +558,7 @@
             "left": {
                 "Type": "preset",
                 "Image": "left",
-                "Actions": [["Route", "GangR8"]]
+                "Actions": [["Route", "Hall1"]]
             },
             "top": {
                 "Type": "preset",

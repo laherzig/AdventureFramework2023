@@ -216,7 +216,8 @@ public class Geography : MinigameDefBase
 					{
 						if (round >= 4)
 						{
-							Finish(null, "Geo6-1");
+		                    GameState.SetState("Geo-Game.Complete", true);
+							Finish(null, "Geo6");
 						}
 						else
 						{

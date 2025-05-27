@@ -6,23 +6,23 @@ public class GeoDialogue : DialogueBase
 	public override string DefaultRoute { get; set; } = "Forum5";
 
 	readonly List<List<string>> messages = [
-		["Du", "Hallo! Könnt ihr mir sagen wo mein Laptop ist?"],
-		["Mauzi", "Vielleicht... wenn du uns helfen kannst :3"],
-		["Du", "Was gibts?"],
-		["Bautzi", "Wir sind richtig schlecht in Bio, kannst du uns helfen?"],
-		["Du", "ok..."],
+		["Du", "Hey, hast du meinen Laptop gesehen? Es ist ein graues Chromebook."],
+		["Anthony", "Oh, natürlich... dein einzigartiges graues Chromebook"],
+		["Du", "Komm schon, hilf mir!"],
+		["Anthony", "Ok, aber zuerst musst du mein Quiz im Geographieraum bestehen."],
+		["Du", "Wirklich? Das macht doch keinen Sinn!"],
+		["Anthony", "Dein Laptop, meine Regeln."],
 	];
 	readonly List<List<string>> VictoryMessage = [
-		["Du", "Viel zu einfach"],
-		["Mauzi", "OMG danke!"],
-		["Bautzi", "Endlich kann ich meinen Eltern eine Note zeigen"],
-		["Du", "Nun raus mit der Sprache, helft mir jetzt!"],
-		["Mautzi", ""],
+		["Du", "Ich bin fertig mit dir dumme Aufgabe! Wo ist mein Laptop?"],
+		["Anthony", "Keine Ahnung, Kumpel..."],
+		["Du", "Ich werde di..."],
+		["Anthony", "Ruhig, ruhig, das war ein Witz."],
+		["Anthony", "Ich habe einen verdächtigen Typ mit einem Laptop gesehen, der am Geographieraum vorbeiging."],
 	];
 	readonly List<List<string>> FailureMessage = [
-		["Du", "Noch nicht fertig, sorry"],
-		["Mauzi", "Dann flieg ich halt raus"],
-		["Bautzi", "L"],
+		["Anthony", "Du bist nicht so schlau, so schnell fertig zu sein."],
+		["Du", "EiNaTmEn, AuSaTmEn..."],
 	];
 
 	public override void AfterInit()

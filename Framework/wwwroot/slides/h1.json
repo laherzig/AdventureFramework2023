@@ -254,7 +254,7 @@
             "top": {
                 "Type": "preset",
                 "Image": "top",
-                "Actions": [["Route", "H1-5"]]
+                "Actions": [["Route", "H1-6"]]
             },
             "left": {
                 "Type": "preset",
@@ -334,18 +334,23 @@
             "left": {
                 "Type": "preset",
                 "Image": "left",
-                "Actions": [["Route", "H1-5"]]
+                "Actions": [["Route", "H1-6"]]
             },
             "right": {
                 "Type": "preset",
                 "Image": "right",
-                "Actions": [["Route", "H1-5"]]
+                "Actions": [["Route", "H1-7"]]
             }
         }
     },
     "H1-6": {
         "Image": "images/Routing/H1/0-5.jpg",
         "Buttons": {
+            "right": {
+                "Type": "preset",
+                "Image": "right",
+                "Actions": [["Route", "H1-5-1"]]
+            },
             "left": {
                 "Type": "preset",
                 "Image": "left",
@@ -354,7 +359,7 @@
             "bottom": {
                 "Type": "preset",
                 "Image": "bottom",
-                "Actions": [["Route", "H1-5"]]
+                "Actions": [["Route", "H1-4"]]
             },
             "top": {
                 "Type": "preset",
@@ -436,9 +441,10 @@
             },
             "KeysPolygon": {
                 "Type": "polygon",
-                "Points": "747,810,757,863,797,878,829,872,846,858,846,828,843,805,827,796,810,795,793,795,774,795,756,799",
+                "Points": "796,802,837,803,867,820,872,850,872,870,859,870,840,870,819,860,803,849,791,832",
                 "Actions": [
                     ["SetGameState", "H1-6-1-1.Keys", "false"],
+                    ["SetGameState", "KeyTaken", "true"],
                     ["SetGameState", "H1-6-1-1.KeysPolygon", "false"],
                     ["AddItem", "keys"]
                 ],
@@ -514,6 +520,11 @@
     "H1-7": {
         "Image": "images/Routing/H1/0-6.jpg",
         "Buttons": {
+            "left": {
+                "Type": "preset",
+                "Image": "left",
+                "Actions": [["Route", "H1-5-1"]]
+            },
             "right": {
                 "Type": "preset",
                 "Image": "right",
@@ -533,6 +544,11 @@
                 "Type": "preset",
                 "Image": "bottom",
                 "Actions": [["Route", "H1-7"]]
+            },
+            "polygon2": {
+                "Type": "polygon",
+                "Points": "558,844,542,152,6,99,6,900",
+                "Actions": [["Route", "Hall8"]]
             },
             "polygon": {
                 "Type": "polygon",

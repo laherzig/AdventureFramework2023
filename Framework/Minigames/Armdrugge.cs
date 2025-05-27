@@ -90,7 +90,7 @@ public class ArmDrugge : MinigameDefBase
     public void gamestart()
     {
 
-        BackgroundImage = "minigame_assets/Armdrücken_assets/Arm_1.png";
+        BackgroundImage = "minigame_assets/Armdrucken_assets/Arm_1.png";
         Update();
 
 
@@ -118,7 +118,7 @@ public class ArmDrugge : MinigameDefBase
 
     public void sounds()
     {
-        List<string> Gamesounds = new List<string> { "minigame_assets/Armdrücken_assets/Armwrestling3.wav", "minigame_assets/Armdrücken_assets/Armwrestling2.wav", "minigame_assets/Armdrücken_assets/Armwrestling1.wav" };
+        List<string> Gamesounds = new List<string> { "minigame_assets/Armdrucken_assets/Armwrestling3.wav", "minigame_assets/Armdrucken_assets/Armwrestling2.wav", "minigame_assets/Armdrucken_assets/Armwrestling1.wav" };
 
         Random rnd = new Random();
         int randomint = rnd.Next(0, 3);
@@ -193,7 +193,7 @@ public class ArmDrugge : MinigameDefBase
         }
         if (score == 0)
         {
-            BackgroundImage = "minigame_assets/Armdrücken_assets/Arm_1.png";
+            BackgroundImage = "minigame_assets/Armdrucken_assets/Arm_1.png";
             circleX = 1200;
             circleY = 500;
             Update();
@@ -202,7 +202,7 @@ public class ArmDrugge : MinigameDefBase
         }
         else if (score == 1)
         {
-            BackgroundImage = "minigame_assets/Armdrücken_assets/Arm_4.png";
+            BackgroundImage = "minigame_assets/Armdrucken_assets/Arm_4.png";
             circleX = 970;
             circleY = 720;
             Update();
@@ -211,7 +211,7 @@ public class ArmDrugge : MinigameDefBase
         }
         else if (score == -1)
         {
-            BackgroundImage = "minigame_assets/Armdrücken_assets/Arm_2_.png";
+            BackgroundImage = "minigame_assets/Armdrucken_assets/Arm_2_.png";
             circleX = 1300;
             circleY = 500;
             Update();
@@ -225,14 +225,14 @@ public class ArmDrugge : MinigameDefBase
             Elements.KillId("ProgressBar11");
             Elements.KillId("Circle1");
             Update();
-            BackgroundImage = "minigame_assets/Armdrücken_assets/Arm_3.png";
+            BackgroundImage = "minigame_assets/Armdrucken_assets/Arm_3.png";
             gameover = true;
             Finish(null, "ArmdruggeDialogueLoose");
         }
         else if (score == 2)
         {
             ProgressBar.Fill = "transparent";
-            BackgroundImage = "minigame_assets/Armdrücken_assets/Arm_5.png";
+            BackgroundImage = "minigame_assets/Armdrucken_assets/Arm_5.png";
             redcol = "transparent";
             Update();
             gameover = true;

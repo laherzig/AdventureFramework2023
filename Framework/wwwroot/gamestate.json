@@ -5,6 +5,7 @@
     "Door": true,
     "False": false,
 
+    "KeyTaken": false,
     "Armdrugge.Tried": false,
     "BG-Forum.Visited": false,
     "BG-Game.Complete": false,

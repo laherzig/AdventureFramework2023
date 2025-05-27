@@ -74,7 +74,7 @@
             "left": {
                 "Type": "preset",
                 "Image": "left",
-                "Actions": [["Route", "Biologie15"]]
+                "Actions": [["Route", "Biologie14"]]
             },
             "right": {
                 "Type": "preset",
@@ -160,13 +160,13 @@
             "frog": {
                 "Type": "image",
                 "Image": "images/Routing/Biologie/frog.png",
-                "Points": "1100,511,109,110",
+                "Points": "1050,511,120,120",
                 "Actions": [],
                 "Visible": true
             },
             "frogPolygon": {
                 "Type": "polygon",
-                "Points": "900,406,1200,390,1200,514,1200,609,1000,630,900,509",
+                "Points": "1042,499,1153,502,1161,601,1052,608",
                 "Actions": [
                     ["Route", "FrogGame"],
                     ["SetGameState", "Biologie21.frog", "false"],
