@@ -1,6 +1,5 @@
 {
     "Start": {
-        "Tags": ["START"],
         "Image": "images/Routing/Other/black.png",
         "Buttons": {},
         "OnEnter": [
@@ -13,6 +12,7 @@
     },
 
     "Forum1": {
+        "Tags": ["START"],
         "Image": "images/Routing/Forum/Forum_1.jpg",
         "Buttons": {
             "top": {
@@ -44,7 +44,7 @@
             "talk": {
                 "Type": "polygon",
                 "Points": "252,933,248,828,272,831,379,841,438,805,464,755,481,720,508,691,530,661,550,595,565,579,574,512,640,482,677,498,711,546,707,579,711,618,736,637,777,685,813,697,894,714,996,691,1020,595,983,575,986,475,1030,462,1101,459,1129,512,1151,582,1172,679,1186,761,1199,843,1199,926,1224,971,1186,1050,1175,1066,965,1061,562,1061,376,1061,265,1064",
-                "Actions": [["Route", "Talk3"]],
+                "Actions": [["Route", "Talk-3"]],
                 "Visible": true
             }
         }
@@ -65,7 +65,8 @@
             "talk": {
                 "Type": "polygon",
                 "Points": "313,835,332,765,404,718,487,728,561,744,618,740,691,740,721,722,730,678,781,609,807,609,793,565,796,506,874,482,897,538,897,586,942,635,957,654,959,711,976,725,1055,728,1088,722,1113,702,1136,672,1151,641,1191,632,1205,571,1224,538,1252,526,1298,531,1324,584,1325,628,1387,684,1398,802,1381,861,1377,930,1360,988,1340,1060,1311,1076,482,1074,499,961,454,911,366,894,333,873",
-                "Actions": [["Route", "Talk-2"]]
+                "Actions": [["Route", "Talk-2"]],
+                "Visible": true
             }
         }
     },
@@ -90,7 +91,8 @@
             "talk": {
                 "Type": "polygon",
                 "Points": "358,482,438,489,462,522,471,585,472,629,478,654,542,681,601,710,787,710,936,671,1108,689,1192,732,1258,844,1138,897,1115,1061,1119,1077,723,1074,630,1064,534,1080,311,1080,292,1076,296,798,289,741,278,694,328,581,329,529,328,505",
-                "Actions": [["Route", "Talk-1"]]
+                "Actions": [["Route", "Talk-1"]],
+                "Visible": true
             }
         }
     },
@@ -110,20 +112,15 @@
             "talk": {
                 "Type": "polygon",
                 "Points": "740,748,835,702,903,710,998,708,1044,705,1105,627,1135,528,1183,514,1234,556,1243,609,1294,625,1294,671,1318,698,1333,728,1339,760,1364,781,1364,841,1318,861,1321,917,1323,971,1323,1011,1276,1050,1243,1069,869,1074,895,884,843,837,786,828,754,807,743,780",
-                "Actions": [["Route", "Talk-4"]]
+                "Actions": [["Route", "Talk-4"]],
+                "Visible": true
             }
         }
     },
 
     "Talk-1": {
-        "Image": "images/Routing/Forum/Forum_5.jpg",
-        "Buttons": {
-            "bottom": {
-                "Type": "preset",
-                "Image": "bottom",
-                "Actions": [["Route", "Forum4"]]
-            }
-        }
+        "Type": "Minigame",
+        "MinigameDefClassName": "Framework.Minigames.MinigameDefClasses.PhDialogue"
     },
 
     "Talk-2": {
@@ -132,30 +129,13 @@
     },
 
     "Talk-3": {
-        "Image": "images/Routing/Forum/Talk-3.jpg",
-        "Buttons": {
-            "bottom": {
-                "Type": "preset",
-                "Image": "bottom",
-                "Actions": [["Route", "Forum2"]]
-            }
-        }
+        "Type": "Minigame",
+        "MinigameDefClassName": "Framework.Minigames.MinigameDefClasses.BioDialogue"
     },
 
     "Talk-4": {
-        "Image": "images/Routing/Forum/Forum_7.jpg",
-        "Buttons": {
-            "bottom": {
-                "Type": "preset",
-                "Image": "bottom",
-                "Actions": [["Route", "Forum5"]]
-            }
-        }
-    },
-
-    "Talk3": {
         "Type": "Minigame",
-        "FallbackSlide": "Talk-3",
-        "MinigameDefClassName": "Framework.Minigames.MinigameDefClasses.BioDialogue"
+        "MinigameDefClassName": "Framework.Minigames.MinigameDefClasses.GeoDialogue"
     }
+
 }

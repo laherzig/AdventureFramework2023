@@ -448,6 +448,7 @@ public class PhMinigame : MinigameDefBase
 
             }
             BackgroundImage = "minigame_assets/PhMinigame_assets/edited/FinishedGameBackground.png";
+		    GameState.SetState("Ph-Game.Complete", true);
             Finish(null, "Phy10");
             Update();
         }

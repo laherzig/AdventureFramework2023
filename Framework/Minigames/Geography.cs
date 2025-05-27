@@ -389,6 +389,7 @@ public class Geography : MinigameDefBase
 						if (round >= 4)
 						{
 							SoundService.PlaySound("minigame_assets/Minigame_Geographie/result.wav");
+		                    GameState.SetState("Geo-Game.Complete", true);
 							Finish(null, "Geo6-1");
 						}
 						else

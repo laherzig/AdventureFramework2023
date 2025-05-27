@@ -27,15 +27,12 @@
         <div class="center-content">
             <h1 id="title">KSR Point and Click</h1>
             <button id="play_button" class="indy-button" @onclick="StartGame">Start Game</button>
-            <a href="/testpage" class="indy-button">TestPage</a>
-            <a href="/showcase" class="indy-button">Minigame Showcase</a>
-
+            <button id="load_button" class="indy-button" @onclick="ShowInputField">Load</button>
             <div>
                 <label for="volume">Volume: @Volume%</label>
                 <input type="range" id="volume" name="volume" min="0" max="100" value="0" @onchange="UpdateVolume" class="volume-range"/>
             </div>
 
-            <button id="load_button" class="indy-button" @onclick="ShowInputField">Load</button>
 
             @if (showInputField)
             {

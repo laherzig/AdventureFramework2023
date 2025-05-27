@@ -7,10 +7,16 @@
 
     "Armdrugge.Tried": false,
     "BG-Forum.Visited": false,
+    "BG-Game.Complete": false,
     "Bio-Forum.Visited": false,
     "Bio-Game.Complete": false,
 
 
+    "Geo-Forum.Visited": false,
+    "Geo-Game.Complete": false,
+
+    "Ph-Forum.Visited": false,
+    "Ph-Game.Complete": false,
 
     "Music-1.Visited": false,
     "Music-Red.Complete": false

@@ -1,6 +1,5 @@
 body {
   font-family: 'Arial', sans-serif;
-  background-color: #f0e68c; /* Light khaki color */
   margin: 0;
   height: 100vh;
   display: flex;
@@ -8,7 +7,12 @@ body {
   align-items: center;
   overflow: hidden; /* Prevent overflow */
 }
-
+.content {
+  text-align: center;
+  max-width: 100%; /* Limit width to a percentage of the viewport */
+  margin: 0 auto; /* Center content horizontally */
+  
+}
 .center-content {
   text-align: center;
   max-width: 80%; /* Limit width to a percentage of the viewport */

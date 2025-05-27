@@ -290,6 +290,7 @@ public class FindErrorsMinigame : MinigameDefBase
 		errorsspotted++;
 		if (errorsspotted == 10)
 		{
+		    GameState.SetState("BG-Game.Complete", true);
 			Finish(null, "Art3");
 		}
 	}
