@@ -69,7 +69,7 @@
     },
 
     "Biologie16": {
-        "Image": "images/Routing/Biologie/BioFloorMinigame_1.png",
+        "Image": "images/Routing/Biologie/BioFloorMiniGame_1.png",
         "Buttons": {
             "left": {
                 "Type": "preset",
@@ -84,7 +84,7 @@
         }
     },
     "Biologie17": {
-        "Image": "images/Routing/Biologie/BioFloorMinigame_2.png",
+        "Image": "images/Routing/Biologie/BioFloorMiniGame_2.png",
         "Buttons": {
             "left": {
                 "Type": "preset",
@@ -99,7 +99,7 @@
         }
     },
     "Biologie18": {
-        "Image": "images/Routing/Biologie/BioFloorMinigame_3.png",
+        "Image": "images/Routing/Biologie/BioFloorMiniGame_3.png",
         "Buttons": {
             "left": {
                 "Type": "preset",
@@ -114,7 +114,7 @@
         }
     },
     "Biologie19": {
-        "Image": "images/Routing/Biologie/BioFloorMinigame_4.png",
+        "Image": "images/Routing/Biologie/BioFloorMiniGame_4.png",
         "Buttons": {
             "left": {
                 "Type": "preset",
@@ -129,7 +129,7 @@
         }
     },
     "Biologie20": {
-        "Image": "images/Routing/Biologie/BioFloorMinigame_5.png",
+        "Image": "images/Routing/Biologie/BioFloorMiniGame_5.png",
         "Buttons": {
             "left": {
                 "Type": "preset",
@@ -145,7 +145,7 @@
     },
 
     "Biologie21": {
-        "Image": "images/Routing/Biologie/BioFloorMinigame_6.png",
+        "Image": "images/Routing/Biologie/BioFloorMiniGame_6.png",
         "Buttons": {
             "left": {
                 "Type": "preset",
@@ -189,7 +189,7 @@
         ]
     },
     "Biologie22": {
-        "Image": "images/Routing/Biologie/BioFloorMinigame_7.png",
+        "Image": "images/Routing/Biologie/BioFloorMiniGame_7.png",
         "Buttons": {
             "left": {
                 "Type": "preset",
@@ -204,7 +204,7 @@
         }
     },
     "Biologie23": {
-        "Image": "images/Routing/Biologie/BioFloorMinigame_8.png",
+        "Image": "images/Routing/Biologie/BioFloorMiniGame_8.png",
         "Buttons": {
             "left": {
                 "Type": "preset",

@@ -6,7 +6,7 @@ namespace Framework.Minigames.MinigameDefClasses;
 public class FindErrorsMinigame : MinigameDefBase
 {
 	public int errorsspotted = 0;
-	public override string BackgroundImage { get; set; } = "minigame_assets/FindErrors_Rejda/IMG_2455.JPG";
+	public override string BackgroundImage { get; set; } = "minigame_assets/FindErrors_Rejda/IMG_2455.jpg";
 	[Element]
 	public Rectangle Rects { get; set; }
 	public Rectangle newRect { get; set; }

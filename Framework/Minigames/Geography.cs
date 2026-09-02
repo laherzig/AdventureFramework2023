@@ -4,7 +4,7 @@ namespace Framework.Minigames.MinigameDefClasses;
 
 public class Geography : MinigameDefBase
 {
-	public override string BackgroundImage { get; set; } = "minigame_assets/Minigame_Geographie/Minigame_Geographie.JPG";
+	public override string BackgroundImage { get; set; } = "minigame_assets/Minigame_Geographie/Minigame_Geographie.jpg";
 	[Element]
 	public Rectangle Rect { get; set; } = new();
 	[Element]

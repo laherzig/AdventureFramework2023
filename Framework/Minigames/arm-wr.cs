@@ -3,7 +3,7 @@ namespace Framework.Minigames.MinigameDefClasses;
 public class ArmdrueckenDialogue : MinigameDefBase
 {
 
-    public override string BackgroundImage {get; set;} = "images/ArmdrückenDialog/IMG_5775.JPG"; // Background Image
+    public override string BackgroundImage {get; set;} = "images/ArmdrückenDialog/IMG_5775.jpg"; // Background Image
 
 
 	//DIALOGUE STUFF
